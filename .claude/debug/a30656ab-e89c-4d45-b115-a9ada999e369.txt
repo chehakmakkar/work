@@ -2846,3 +2846,19 @@ Updating files:   4% (38/796)Updating files:   5% (40/796)Updating files:   6%
     at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
     at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
     at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245
+2026-11-22T15:25:40.851Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-11-22T15:25:40.851Z [DEBUG] AutoUpdater: Using global update method
+2026-11-22T15:25:41.146Z [ERROR] hK1: hK1: Insufficient permissions for global npm install.
+    at Uq0 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2929:1139)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async XEA (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2939:43)
+    at async Object.current (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:4935:32615)
+2026-11-22T15:26:11.191Z [ERROR] Error: Error: 1P event logging: 1 events failed to export
+    at ua1.queueFailedEvents (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:2038)
+    at async ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1195)
+2026-11-22T15:26:11.191Z [ERROR] Error: Error: {"stack":"Error: Failed to export 1 events\n    at ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1297)","message":"Failed to export 1 events","name":"Error"}
+    at TH0.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:34862)
+    at Zn1.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:10521)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
+    at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245

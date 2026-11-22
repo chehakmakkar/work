@@ -119,3 +119,7 @@
 [14:50:53] [172.16.0.193][706689de][ExtensionHostConnection] The client has reconnected.
 [14:50:53] [172.16.0.193][8f76131d][ManagementConnection] The client has reconnected.
 [14:52:12] [172.16.0.193][706689de][ExtensionHostConnection] The client has reconnected.
+[15:04:43] [172.16.0.193][8f76131d][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[15:43:38] [172.16.0.193][8f76131d][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[15:43:38] [172.16.0.193][706689de][ExtensionHostConnection] The client has reconnected.
+[15:43:38] [172.16.0.193][8f76131d][ManagementConnection] The client has reconnected.
