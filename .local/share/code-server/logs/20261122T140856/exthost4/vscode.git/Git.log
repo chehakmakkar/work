@@ -117,3 +117,233 @@ See "git help gc" for manual housekeeping.
 2026-11-22 15:43:55.480 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [104ms]
 2026-11-22 15:43:56.122 [info] > git check-ignore -v -z --stdin [106ms]
 2026-11-22 15:44:08.762 [info] > git status -z -uall [13403ms]
+2026-11-22 15:44:25.717 [info] > git add -A -- . [16347ms]
+2026-11-22 15:44:32.217 [info] > git push -u origin master [23431ms]
+2026-11-22 15:44:32.223 [info] remote: error: Trace: e6fd71baca8659a23038d2e1f025c817a054f40dbf3bc5bb782a8f0b756b2e5a        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File project/starter/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64/claude is 363.47 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File work.zip is 158.55 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File .npm/_cacache/content-v2/sha512/f7/0e/2e31d037bcd657a1cc0e5218af386a2d5e8443c4dfc2ff13cc919318f563e928b0258fcba9319b243603e340a9554578713df35a81c0628c63d41f859ea4 is 167.26 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File project.zip is 195.88 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: pre-receive hook declined
+To https://github.com/chehakmakkar/work.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/chehakmakkar/work.git'
+2026-11-22 15:44:32.362 [info] > git config --get commit.template [106ms]
+2026-11-22 15:44:32.397 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [111ms]
+2026-11-22 15:44:32.560 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [105ms]
+2026-11-22 15:44:45.934 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [20187ms]
+2026-11-22 15:44:45.996 [info] > git config --get commit.template [39ms]
+2026-11-22 15:44:46.027 [info] > git status -z -uall [13597ms] (cancelled)
+2026-11-22 15:44:46.048 [info] > git config --get commit.template [24ms]
+2026-11-22 15:44:46.095 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [47ms]
+2026-11-22 15:44:46.253 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [113ms]
+2026-11-22 15:45:02.820 [info] > git status -z -uall [16705ms]
+2026-11-22 15:45:03.151 [info] > git config --get commit.template [36ms]
+2026-11-22 15:45:03.179 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [43ms]
+2026-11-22 15:45:03.271 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [52ms]
+2026-11-22 15:45:03.785 [info] > git check-ignore -v -z --stdin [89ms]
+2026-11-22 15:45:16.874 [info] > git status -z -uall [13674ms]
+2026-11-22 15:45:19.080 [info] > git config --get commit.template [26ms]
+2026-11-22 15:45:19.109 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [35ms]
+2026-11-22 15:45:19.250 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [102ms]
+2026-11-22 15:45:32.593 [info] > git status -z -uall [13462ms]
+2026-11-22 15:45:37.643 [info] > git config --get commit.template [27ms]
+2026-11-22 15:45:37.681 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [41ms]
+2026-11-22 15:45:37.793 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [74ms]
+2026-11-22 15:45:53.948 [info] > git status -z -uall [16246ms]
+2026-11-22 15:45:58.989 [info] > git config --get commit.template [23ms]
+2026-11-22 15:45:59.028 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [43ms]
+2026-11-22 15:45:59.125 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [58ms]
+2026-11-22 15:46:05.850 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat -n50 --skip=0 --topo-order --decorate=full --stdin [146452ms]
+2026-11-22 15:46:13.602 [info] > git status -z -uall [14551ms]
+2026-11-22 15:46:14.528 [info] > git check-ignore -v -z --stdin [33ms]
+2026-11-22 15:46:18.642 [info] > git config --get commit.template [19ms]
+2026-11-22 15:46:18.677 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [37ms]
+2026-11-22 15:46:18.842 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [123ms]
+2026-11-22 15:46:31.241 [info] > git status -z -uall [12543ms]
+2026-11-22 15:48:50.144 [info] > git config --get commit.template [21ms]
+2026-11-22 15:48:50.182 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [44ms]
+2026-11-22 15:48:50.337 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [115ms]
+2026-11-22 15:49:04.929 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname)%00%(parent)%00%(*parent)%00%(authorname)%00%(*authorname)%00%(committerdate:unix)%00%(*committerdate:unix)%00%(subject)%00%(*subject)%00%(upstream:track) [49ms]
+2026-11-22 15:49:06.776 [info] > git status -z -uall [16571ms]
+2026-11-22 15:49:31.395 [info] > git push -u origin master [20617ms]
+2026-11-22 15:49:31.395 [info] remote: error: Trace: 75ee5df742c7410f729823fe3c1e0f03aa9479ece7a3ceb28014ffef30b4b00a        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File .npm/_cacache/content-v2/sha512/f7/0e/2e31d037bcd657a1cc0e5218af386a2d5e8443c4dfc2ff13cc919318f563e928b0258fcba9319b243603e340a9554578713df35a81c0628c63d41f859ea4 is 167.26 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File project.zip is 195.88 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File project/starter/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64/claude is 363.47 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File work.zip is 158.55 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: pre-receive hook declined
+To https://github.com/chehakmakkar/work.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/chehakmakkar/work.git'
+2026-11-22 15:49:31.447 [info] > git config --get commit.template [26ms]
+2026-11-22 15:49:31.502 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [63ms]
+2026-11-22 15:49:31.627 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [89ms]
+2026-11-22 15:49:44.190 [info] > git status -z -uall [12669ms]
+2026-11-22 15:49:44.232 [info] > git config --get commit.template [20ms]
+2026-11-22 15:49:44.266 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [35ms]
+2026-11-22 15:49:44.387 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [83ms]
+2026-11-22 15:50:01.421 [info] > git status -z -uall [17135ms]
+2026-11-22 15:50:16.457 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat -n50 --skip=0 --topo-order --decorate=full --stdin [83551ms]
+2026-11-22 15:50:34.665 [info] > git push -u origin master [22060ms]
+2026-11-22 15:50:34.666 [info] remote: error: Trace: ee83de865ee040da0d03c88940abfed3cd2ecb9339a4e52f2b5907fdcfaac45d        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File .npm/_cacache/content-v2/sha512/f7/0e/2e31d037bcd657a1cc0e5218af386a2d5e8443c4dfc2ff13cc919318f563e928b0258fcba9319b243603e340a9554578713df35a81c0628c63d41f859ea4 is 167.26 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File project.zip is 195.88 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File project/starter/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64/claude is 363.47 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File work.zip is 158.55 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: pre-receive hook declined
+To https://github.com/chehakmakkar/work.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/chehakmakkar/work.git'
+2026-11-22 15:50:34.713 [info] > git config --get commit.template [21ms]
+2026-11-22 15:50:34.730 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [18ms]
+2026-11-22 15:50:34.863 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [94ms]
+2026-11-22 15:50:47.254 [info] > git status -z -uall [12502ms]
+2026-11-22 15:50:47.543 [info] > git config --get commit.template [21ms]
+2026-11-22 15:50:47.554 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2026-11-22 15:50:47.660 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [69ms]
+2026-11-22 15:51:02.762 [info] > git status -z -uall [15188ms]
+2026-11-22 15:51:07.802 [info] > git config --get commit.template [19ms]
+2026-11-22 15:51:07.813 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2026-11-22 15:51:07.916 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [58ms]
+2026-11-22 15:51:21.099 [info] > git status -z -uall [13263ms]
+2026-11-22 15:51:26.142 [info] > git config --get commit.template [24ms]
+2026-11-22 15:51:26.156 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [17ms]
+2026-11-22 15:51:26.240 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [45ms]
+2026-11-22 15:51:37.866 [info] > git status -z -uall [11688ms]
+2026-11-22 15:51:39.000 [info] > git fetch --all [330ms]
+2026-11-22 15:51:39.050 [info] > git config --get commit.template [29ms]
+2026-11-22 15:51:39.060 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2026-11-22 15:51:39.207 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [101ms]
+2026-11-22 15:51:51.444 [info] > git status -z -uall [12362ms]
+2026-11-22 15:51:51.480 [info] > git config --get commit.template [19ms]
+2026-11-22 15:51:51.494 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+2026-11-22 15:51:51.602 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [69ms]
+2026-11-22 15:52:06.577 [info] > git fetch --all [314ms]
+2026-11-22 15:52:06.597 [info] > git status -z -uall [15082ms] (cancelled)
+2026-11-22 15:52:06.603 [info] > git config --get commit.template [10ms]
+2026-11-22 15:52:06.636 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2026-11-22 15:52:06.731 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [53ms]
+2026-11-22 15:52:20.413 [info] > git status -z -uall [13761ms]
+2026-11-22 15:52:26.323 [info] > git config --get commit.template [18ms]
+2026-11-22 15:52:26.336 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2026-11-22 15:52:26.437 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [57ms]
+2026-11-22 15:52:38.238 [info] > git status -z -uall [11879ms]
+2026-11-22 15:52:43.276 [info] > git config --get commit.template [19ms]
+2026-11-22 15:52:43.287 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2026-11-22 15:52:43.420 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [96ms]
+2026-11-22 15:52:55.556 [info] > git status -z -uall [12249ms]
+2026-11-22 15:53:20.589 [info] > git push -u origin master [20304ms]
+2026-11-22 15:53:20.589 [info] remote: error: Trace: 173326e250cb8169c79abd53efd487dc835b38208bc4319efe4d016846213fc4        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File .npm/_cacache/content-v2/sha512/f7/0e/2e31d037bcd657a1cc0e5218af386a2d5e8443c4dfc2ff13cc919318f563e928b0258fcba9319b243603e340a9554578713df35a81c0628c63d41f859ea4 is 167.26 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File project.zip is 195.88 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File project/starter/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64/claude is 363.47 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File work.zip is 158.55 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: pre-receive hook declined
+To https://github.com/chehakmakkar/work.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/chehakmakkar/work.git'
+2026-11-22 15:53:20.646 [info] > git config --get commit.template [31ms]
+2026-11-22 15:53:20.660 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [17ms]
+2026-11-22 15:53:20.787 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [90ms]
+2026-11-22 15:53:35.329 [info] > git status -z -uall [14651ms]
+2026-11-22 15:53:35.374 [info] > git config --get commit.template [25ms]
+2026-11-22 15:53:35.386 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+2026-11-22 15:53:35.472 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [45ms]
+2026-11-22 15:53:47.237 [info] > git status -z -uall [11831ms]
+2026-11-22 15:53:52.280 [info] > git config --get commit.template [25ms]
+2026-11-22 15:53:52.294 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [16ms]
+2026-11-22 15:53:52.390 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [56ms]
+2026-11-22 15:54:04.824 [info] > git status -z -uall [12509ms]
+2026-11-22 15:56:55.180 [info] > git config --get commit.template [26ms]
+2026-11-22 15:56:55.194 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [20ms]
+2026-11-22 15:56:55.351 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [113ms]
+2026-11-22 15:56:56.029 [info] > git check-ignore -v -z --stdin [57ms]
+2026-11-22 15:57:10.132 [info] > git status -z -uall [14913ms]
+2026-11-22 15:57:15.178 [info] > git config --get commit.template [25ms]
+2026-11-22 15:57:15.188 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [13ms]
+2026-11-22 15:57:15.316 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [87ms]
+2026-11-22 15:57:18.815 [info] > git check-ignore -v -z --stdin [209ms]
+2026-11-22 15:57:22.413 [info] > git check-ignore -v -z --stdin [169ms]
+2026-11-22 15:57:25.415 [info] > git check-ignore -v -z --stdin [92ms]
+2026-11-22 15:57:26.960 [info] > git status -z -uall [11750ms]
+2026-11-22 15:57:32.003 [info] > git config --get commit.template [24ms]
+2026-11-22 15:57:32.012 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+2026-11-22 15:57:32.119 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [57ms]
+2026-11-22 15:57:45.268 [info] > git status -z -uall [13229ms]
+2026-11-22 15:57:58.134 [info] > git push -u origin master [25163ms]
+2026-11-22 15:57:58.134 [info] remote: error: Trace: fe8a3ae71fb0dae16317499307306267fda9ad2faa452c1cd322fa18dde40061        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File .npm/_cacache/content-v2/sha512/f7/0e/2e31d037bcd657a1cc0e5218af386a2d5e8443c4dfc2ff13cc919318f563e928b0258fcba9319b243603e340a9554578713df35a81c0628c63d41f859ea4 is 167.26 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File project.zip is 195.88 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File project/starter/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64/claude is 363.47 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File work.zip is 158.55 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: pre-receive hook declined
+To https://github.com/chehakmakkar/work.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/chehakmakkar/work.git'
+2026-11-22 15:57:58.202 [info] > git config --get commit.template [37ms]
+2026-11-22 15:57:58.222 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [24ms]
+2026-11-22 15:57:58.418 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [155ms]
+2026-11-22 15:58:13.535 [info] > git status -z -uall [15291ms]
+2026-11-22 15:58:13.576 [info] > git config --get commit.template [20ms]
+2026-11-22 15:58:13.589 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2026-11-22 15:58:13.701 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [71ms]
+2026-11-22 15:58:24.459 [info] > git fetch --all [747ms]
+2026-11-22 15:58:24.484 [info] > git status -z -uall [10874ms] (cancelled)
+2026-11-22 15:58:24.508 [info] > git config --get commit.template [25ms]
+2026-11-22 15:58:24.524 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [18ms]
+2026-11-22 15:58:24.633 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [69ms]
+2026-11-22 15:58:37.404 [info] > git status -z -uall [12858ms]
+2026-11-22 15:58:38.382 [info] > git check-ignore -v -z --stdin [20ms]
+2026-11-22 15:58:38.657 [info] > git config --get commit.template [23ms]
+2026-11-22 15:58:38.670 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [16ms]
+2026-11-22 15:58:38.787 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [66ms]
+2026-11-22 15:58:51.280 [info] > git status -z -uall [12584ms]
+2026-11-22 15:58:56.335 [info] > git config --get commit.template [34ms]
+2026-11-22 15:58:56.353 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [20ms]
+2026-11-22 15:58:56.489 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [99ms]
+2026-11-22 15:58:59.461 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat -n50 --skip=0 --topo-order --decorate=full --stdin [92197ms]
+2026-11-22 15:59:11.159 [info] > git fetch --all [341ms]
+2026-11-22 15:59:11.179 [info] > git status -z -uall [14806ms] (cancelled)
+2026-11-22 15:59:11.185 [info] > git config --get commit.template [8ms]
+2026-11-22 15:59:11.220 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2026-11-22 15:59:11.370 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [110ms]
+2026-11-22 15:59:24.608 [info] > git status -z -uall [13367ms]
+2026-11-22 15:59:24.653 [info] > git config --get commit.template [24ms]
+2026-11-22 15:59:24.666 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+2026-11-22 15:59:24.763 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [54ms]
+2026-11-22 15:59:36.454 [info] > git status -z -uall [11765ms]
+2026-11-22 15:59:41.491 [info] > git config --get commit.template [18ms]
+2026-11-22 15:59:41.504 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2026-11-22 15:59:41.600 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [62ms]
+2026-11-22 15:59:53.108 [info] > git status -z -uall [11586ms]
+2026-11-22 16:00:12.274 [info] > git config --get commit.template [22ms]
+2026-11-22 16:00:12.293 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [21ms]
+2026-11-22 16:00:12.457 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [126ms]
+2026-11-22 16:00:33.954 [info] > git status -z -uall [21641ms]
+2026-11-22 16:00:39.003 [info] > git config --get commit.template [23ms]
+2026-11-22 16:00:39.023 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [22ms]
+2026-11-22 16:00:39.148 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [74ms]
+2026-11-22 16:00:49.644 [info] > git status -z -uall [10597ms]
+2026-11-22 16:00:54.701 [info] > git config --get commit.template [33ms]
+2026-11-22 16:00:54.720 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [22ms]
+2026-11-22 16:00:54.811 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [48ms]
+2026-11-22 16:01:05.430 [info] > git status -z -uall [10689ms]
+2026-11-22 16:01:10.478 [info] > git config --get commit.template [23ms]
+2026-11-22 16:01:10.497 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [20ms]
+2026-11-22 16:01:10.630 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [89ms]
+2026-11-22 16:01:23.724 [info] > git status -z -uall [13203ms]
+2026-11-22 16:01:23.777 [info] > git config --get commit.template [20ms]
+2026-11-22 16:01:23.808 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [33ms]
+2026-11-22 16:01:23.909 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [51ms]
+2026-11-22 16:01:27.539 [info] > git status -z -uall [3708ms]

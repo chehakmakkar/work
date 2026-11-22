@@ -1,1 +1,4 @@
 2026-11-22 14:34:38.155 [info] Log level: Info
+2026-11-22 15:46:07.872 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_getCommitAuthor] Failed to get commit author for chehakmakkar/work/84496376a002d2cfe90a094d3432fc00eeac5cb9: TypeError: Cannot read properties of null (reading 'author')
+2026-11-22 15:50:17.085 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_getCommitAuthor] Failed to get commit author for chehakmakkar/work/114642dbee687f13da2253b2073abe5904649260: TypeError: Cannot read properties of null (reading 'author')
+2026-11-22 15:59:00.019 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_getCommitAuthor] Failed to get commit author for chehakmakkar/work/114642dbee687f13da2253b2073abe5904649260: TypeError: Cannot read properties of null (reading 'author')
