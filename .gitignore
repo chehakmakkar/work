@@ -1,2 +1,5 @@
 node_modules/
 work.zip
+project.zip
+.npm/
+project/starter/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64/
