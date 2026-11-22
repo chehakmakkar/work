@@ -1,0 +1,38 @@
+import { Orchestrator } from './orchestrator.js';
+import { Logger } from './utils/logger.js';
+
+async function main() {
+  const args = process.argv.slice(2);
+
+  if (args.length < 3) {
+    console.log('Usage: npm run dev -- <owner> <repo> <prNumber>');
+    console.log('Example: npm run dev -- octocat Hello-World 1');
+    process.exit(1);
+  }
+
+  const [owner, repo, prNumberStr] = args;
+  const prNumber = parseInt(prNumberStr, 10);
+
+  if (isNaN(prNumber)) {
+    console.error('Error: PR number must be a valid integer');
+    process.exit(1);
+  }
+
+  try {
+    const orchestrator = new Orchestrator();
+    Logger.info('Initiating code review', { owner, repo, prNumber });
+
+    const report = await orchestrator.reviewPullRequest(owner, repo, prNumber);
+
+    console.log('\n=== Code Review Report ===\n');
+    console.log(JSON.stringify(report, null, 2));
+  } catch (error) {
+    Logger.error('Fatal error', error);
+    process.exit(1);
+  }
+}
+
+main().catch((error) => {
+  Logger.error('Uncaught error', error);
+  process.exit(1);
+});

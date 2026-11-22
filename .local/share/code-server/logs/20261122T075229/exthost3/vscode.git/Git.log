@@ -1,0 +1,134 @@
+2026-11-22 07:54:21.173 [info] [main] Log level: Info
+2026-11-22 07:54:21.173 [info] [main] Validating found git in: "git"
+2026-11-22 07:54:21.177 [info] [main] Using git "2.25.1" from "git"
+2026-11-22 07:54:21.182 [info] [Model][doInitialScan] Initial repository scan started
+2026-11-22 07:54:21.186 [info] > git rev-parse --show-toplevel [7ms]
+2026-11-22 07:54:21.191 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:54:21.194 [info] > git rev-parse --show-toplevel [6ms]
+2026-11-22 07:54:21.198 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:54:21.203 [info] > git rev-parse --show-toplevel [9ms]
+2026-11-22 07:54:21.207 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:54:21.211 [info] > git rev-parse --show-toplevel [7ms]
+2026-11-22 07:54:21.215 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:54:21.220 [info] > git rev-parse --show-toplevel [9ms]
+2026-11-22 07:54:21.223 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:54:21.227 [info] > git rev-parse --show-toplevel [5ms]
+2026-11-22 07:54:21.230 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:54:21.234 [info] > git rev-parse --show-toplevel [6ms]
+2026-11-22 07:54:21.238 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:54:21.242 [info] > git rev-parse --show-toplevel [6ms]
+2026-11-22 07:54:21.246 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:54:21.250 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-11-22 07:56:33.801 [info] > git rev-parse --show-toplevel [7ms]
+2026-11-22 07:56:33.802 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:56:36.458 [info] > git rev-parse --show-toplevel [6ms]
+2026-11-22 07:56:36.458 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:57:46.147 [info] > git rev-parse --show-toplevel [16ms]
+2026-11-22 07:57:46.198 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [35ms]
+2026-11-22 07:57:46.209 [info] [Model][openRepository] Opened repository (path): /voc/work/.claude/plugins/marketplaces/anthropics-claude-plugins-official
+2026-11-22 07:57:46.209 [info] [Model][openRepository] Opened repository (real path): /voc/work/.claude/plugins/marketplaces/anthropics-claude-plugins-official
+2026-11-22 07:57:46.213 [info] [Model][openRepository] Opened repository (kind): repository
+2026-11-22 07:57:46.256 [info] > git config --get commit.template [17ms]
+2026-11-22 07:57:46.274 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [21ms]
+2026-11-22 07:57:46.274 [warning] [Git][getBranch] No such branch: master
+2026-11-22 07:57:46.335 [info] > git status -z -uall [41ms]
+2026-11-22 07:57:46.336 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [24ms]
+2026-11-22 07:57:46.396 [info] > git config --get commit.template [18ms]
+2026-11-22 07:57:46.396 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [39ms]
+2026-11-22 07:57:46.401 [warning] [Git][getBranch] No such branch: master
+2026-11-22 07:57:46.406 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2026-11-22 07:57:46.413 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [19ms]
+2026-11-22 07:57:46.414 [warning] [Git][getBranch] No such branch: master
+2026-11-22 07:57:46.452 [info] > git status -z -uall [23ms]
+2026-11-22 07:57:46.458 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [17ms]
+2026-11-22 07:58:32.559 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/voc/work/.claude/plugins/marketplaces/anthropics-claude-plugins-official/.git/config'
+2026-11-22 07:58:32.575 [warning] [Git][getHEAD] Failed to parse HEAD file: ENOENT: no such file or directory, open '/voc/work/.claude/plugins/marketplaces/anthropics-claude-plugins-official/.git/HEAD'
+2026-11-22 07:58:32.591 [info] > git symbolic-ref --short HEAD [15ms]
+2026-11-22 07:58:32.591 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:58:32.606 [info] > git remote --verbose [47ms]
+2026-11-22 07:58:32.606 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:58:32.627 [warning] [Git][getHEAD] Failed to parse HEAD file: ENOENT: no such file or directory, open '/voc/work/.claude/plugins/marketplaces/anthropics-claude-plugins-official/.git/HEAD'
+2026-11-22 07:58:32.641 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/voc/work/.claude/plugins/marketplaces/anthropics-claude-plugins-official/.git/config'
+2026-11-22 07:58:32.657 [info] > git rev-parse HEAD [51ms]
+2026-11-22 07:58:32.657 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:58:32.662 [info] > git config --get commit.template [73ms]
+2026-11-22 07:58:32.666 [info] > git config --get commit.template [10ms]
+2026-11-22 07:58:32.670 [info] > git remote --verbose [28ms]
+2026-11-22 07:58:32.674 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:58:32.678 [info] > git symbolic-ref --short HEAD [51ms]
+2026-11-22 07:58:32.682 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 07:58:32.707 [info] > git rev-parse HEAD [7ms]
+2026-11-22 07:58:32.707 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.179 [info] > git rev-parse --show-toplevel [31ms]
+2026-11-22 08:03:15.181 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.209 [info] > git rev-parse --show-toplevel [8ms]
+2026-11-22 08:03:15.209 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.237 [info] > git rev-parse --show-toplevel [8ms]
+2026-11-22 08:03:15.237 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.265 [info] > git rev-parse --show-toplevel [9ms]
+2026-11-22 08:03:15.269 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.296 [info] > git rev-parse --show-toplevel [8ms]
+2026-11-22 08:03:15.297 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.321 [info] > git rev-parse --show-toplevel [7ms]
+2026-11-22 08:03:15.322 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.346 [info] > git rev-parse --show-toplevel [8ms]
+2026-11-22 08:03:15.346 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.372 [info] > git rev-parse --show-toplevel [8ms]
+2026-11-22 08:03:15.372 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.400 [info] > git rev-parse --show-toplevel [9ms]
+2026-11-22 08:03:15.401 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.430 [info] > git rev-parse --show-toplevel [10ms]
+2026-11-22 08:03:15.430 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.456 [info] > git rev-parse --show-toplevel [9ms]
+2026-11-22 08:03:15.456 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.490 [info] > git rev-parse --show-toplevel [13ms]
+2026-11-22 08:03:15.490 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.525 [info] > git rev-parse --show-toplevel [9ms]
+2026-11-22 08:03:15.525 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.553 [info] > git rev-parse --show-toplevel [8ms]
+2026-11-22 08:03:15.553 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:03:15.584 [info] > git rev-parse --show-toplevel [11ms]
+2026-11-22 08:03:15.584 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:07:52.880 [info] > git rev-parse --show-toplevel [14ms]
+2026-11-22 08:07:52.882 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:07:52.917 [info] > git rev-parse --show-toplevel [13ms]
+2026-11-22 08:07:52.917 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:08:07.880 [info] > git rev-parse --show-toplevel [8ms]
+2026-11-22 08:08:07.880 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-11-22 08:08:07.903 [info] > git rev-parse --show-toplevel [4ms]
+2026-11-22 08:08:07.903 [info] fatal: not a git repository (or any parent up to mount point /voc)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).

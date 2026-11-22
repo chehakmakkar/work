@@ -1,0 +1,45 @@
+Your RateLimiter has the right overall structure: it tracks timestamps, estimated tokens, requests per minute, tokens per minute, and active requests. However, the concurrency guard in acquire() is not atomic, so multiple simultaneous callers can pass waitForSlot() before activeRequests is incremented and exceed maxConcurrentRequests.
+
+✅ What you did well
+requestHistory stores both timestamp and tokensUsed, which supports request and token tracking.
+pruneOldRecords() filters records by a sliding windowSizeMs, which is the right algorithmic approach.
+canProceed() checks request count, token usage, and active request count.
+getStatus() exposes useful runtime monitoring information.
+⚠️ What can be improved
+Remove the unused ReviewError import from src/utils/rate-limiter.ts unless you plan to throw structured errors for impossible limits.
+Add Vitest tests with fake timers and concurrent Promise.all(...) calls to prove the limiter blocks as expected.
+❌ What is missing or incorrect
+The issue is in RateLimiter.acquire(): it first calls await this.waitForSlot(), then await this.waitForRateLimit(estimatedTokens), and only after both complete does it increment this.activeRequests++. With maxConcurrentRequests: 1, two callers can both enter waitForSlot() while activeRequests is still 0, both resolve immediately, both pass canProceed(), and then both increment active requests. That means the class does not reliably respect the configured concurrent-request limit. 👉 This is a core rubric requirement.
+
+A concrete fix is to combine checking and reservation in one loop:
+
+async acquire(estimatedTokens: number): Promise<void> {
+  while (true) {
+    this.pruneOldRecords();
+    const totalTokens = this.requestHistory.reduce((sum, r) => sum + r.tokensUsed, 0);
+    const canReserve =
+      this.activeRequests < this.maxConcurrentRequests &&
+      this.requestHistory.length < this.maxRequestsPerMinute &&
+      totalTokens + estimatedTokens <= this.maxTokensPerMinute;
+
+    if (canReserve) {
+      this.activeRequests++;
+      this.requestHistory.push({ timestamp: Date.now(), tokensUsed: estimatedTokens });
+      return;
+    }
+
+    const oldest = this.requestHistory[0];
+    const waitMs = oldest ? Math.max(100, oldest.timestamp + this.windowSizeMs - Date.now() + 100) : 100;
+    await new Promise((resolve) => setTimeout(resolve, waitMs));
+  }
+}
+This works because a request reserves its active slot immediately when the limits allow it, preventing another concurrent caller from seeing the same slot as available.
+
+📚 How to Improve / Further Learning
+Cloudflare blog on rate limiting concepts(opens in a new tab) gives useful background on production rate limiting strategies.
+MDN async function documentation(opens in a new tab) is helpful for reasoning about where concurrent calls can interleave.
+Vitest timer mocking guide(opens in a new tab) will help you test sliding windows and waiting behavior deterministically.
+The src/utils/rate-limiter.ts file is complete with working rate limiter implementation.
+The rate limiter tracks requests and tokens in a sliding time window.
+Core methods (acquire, canProceed, pruneOldRecords) are implemented.
+The system respects configured limits for requests per minute, tokens per minute, and concurrent requests.

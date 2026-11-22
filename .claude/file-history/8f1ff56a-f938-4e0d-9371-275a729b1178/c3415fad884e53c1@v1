@@ -1,0 +1,20 @@
+import { AgentDefinition } from '@anthropic-ai/sdk/lib/agents.js';
+import { codeQualityAnalyzerPrompt } from '../prompts/index.js';
+
+export const codeQualityAnalyzer: AgentDefinition = {
+  name: 'code-quality-analyzer',
+  description:
+    'Analyzes code for security vulnerabilities, performance issues, and maintainability concerns. Uses code inspection tools and security analysis skills to identify potential risks and provide severity-rated issues.',
+  model: 'inherit',
+  instructions: codeQualityAnalyzerPrompt,
+  tools: [
+    {
+      type: 'builtin',
+      name: 'bash',
+    },
+    {
+      type: 'builtin',
+      name: 'str_replace_based_edit_tool',
+    },
+  ],
+};

@@ -1,0 +1,25 @@
+2026-11-22 14:08:57.088 [info] 
+
+
+
+
+2026-11-22 14:08:57.088 [info] Extension host agent started.
+2026-11-22 14:09:18.410 [info] [172.16.0.193][0cf59acc][ManagementConnection] New connection established.
+2026-11-22 14:09:22.481 [info] [172.16.0.193][0cf59acc][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-11-22 14:09:27.052 [info] [172.16.0.193][38dfbeb7][ManagementConnection] New connection established.
+2026-11-22 14:09:31.242 [info] [172.16.0.193][38dfbeb7][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-11-22 14:09:31.878 [info] [172.16.0.193][f04d9b9a][ExtensionHostConnection] New connection established.
+2026-11-22 14:09:31.898 [info] [172.16.0.193][f04d9b9a][ExtensionHostConnection] <86> Launched Extension Host Process.
+2026-11-22 14:09:34.894 [info] [172.16.0.193][b57c5f82][ManagementConnection] New connection established.
+2026-11-22 14:09:39.475 [info] [172.16.0.193][b845c306][ExtensionHostConnection] New connection established.
+2026-11-22 14:09:39.499 [info] [172.16.0.193][b845c306][ExtensionHostConnection] <111> Launched Extension Host Process.
+2026-11-22 14:11:37.964 [info] [172.16.0.193][b57c5f82][ManagementConnection] The client has reconnected.
+2026-11-22 14:14:35.092 [info] [172.16.0.193][f04d9b9a][ExtensionHostConnection] <86> Extension Host Process exited with code: 0, signal: null.
+2026-11-22 14:34:17.269 [info] [172.16.0.193][b57c5f82][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-11-22 14:34:17.275 [info] [172.16.0.193][b845c306][ExtensionHostConnection] <111> Extension Host Process exited with code: 0, signal: null.
+2026-11-22 14:34:23.710 [info] [172.16.0.193][8f76131d][ManagementConnection] New connection established.
+2026-11-22 14:34:27.488 [info] [172.16.0.193][706689de][ExtensionHostConnection] New connection established.
+2026-11-22 14:34:27.515 [info] [172.16.0.193][706689de][ExtensionHostConnection] <8121> Launched Extension Host Process.
+2026-11-22 14:50:53.202 [info] [172.16.0.193][706689de][ExtensionHostConnection] The client has reconnected.
+2026-11-22 14:50:53.857 [info] [172.16.0.193][8f76131d][ManagementConnection] The client has reconnected.
+2026-11-22 14:52:12.589 [info] [172.16.0.193][706689de][ExtensionHostConnection] The client has reconnected.

@@ -1,0 +1,42 @@
+Your orchestratorPrompt describes the right conceptual workflow, including fetching PR data and invoking the three agents. The implementation in src/orchestrator.ts, however, does not use the Claude Agent SDK orchestration mechanism; it imports Anthropic from @anthropic-ai/sdk and calls this.client.messages.create(...), so the GitHub/ESLint MCP tools and subagents are never registered with the runtime.
+
+✅ What you did well
+src/prompts/orchestrator.prompt.ts explicitly says to fetch PR data with GitHub MCP tools and use the three named agents.
+You import codeQualityAnalyzer, testCoverageAnalyzer, and refactoringSuggester in src/orchestrator.ts, which shows the intended design direction.
+You validate the final response with ReviewReportSchema.parse(output), which is a strong safeguard after agent execution.
+⚠️ What can be improved
+Remove unused imports after the rewrite. Currently orchestratorPrompt and the three imported agent objects are not actually used in the client.messages.create() call.
+Keep your JSON cleanup/validation approach, but apply it to the Agent SDK result event rather than a plain Messages API response.
+❌ What is missing or incorrect
+The current orchestrator does not meet the multi-agent execution requirement because src/orchestrator.ts uses this.client.messages.create({ ... }) from @anthropic-ai/sdk, and package.json does not include @anthropic-ai/claude-agent-sdk. There is no query() call, no mcpServers: mcpConfig.servers, no allowedTools containing GitHub/ESLint MCP tools plus Task, and no agents: [codeQualityAnalyzer, testCoverageAnalyzer, refactoringSuggester] registration. 👉 This is a core rubric requirement.
+
+One concrete fix is:
+
+import { query } from '@anthropic-ai/claude-agent-sdk';
+import { mcpConfig } from './config/mcp.config.js';
+import { codeQualityAnalyzer, testCoverageAnalyzer, refactoringSuggester } from './agents/index.js';
+
+async reviewPullRequest(owner: string, repo: string, prNumber: number): Promise<ReviewReport> {
+  const prompt = `${orchestratorPrompt}\nReview ${owner}/${repo}#${prNumber}. Fetch PR data, then use all three subagents.`;
+  const stream = query({
+    prompt,
+    options: {
+      mcpServers: mcpConfig.servers,
+      allowedTools: ['mcp__github', 'mcp__eslint', 'Task', 'Read', 'Grep', 'Glob', 'Skill'],
+      agents: [codeQualityAnalyzer, testCoverageAnalyzer, refactoringSuggester],
+      maxTurns: 20,
+    },
+  });
+  // collect the success result, parse JSON, then call ReviewReportSchema.parse(...)
+}
+Also update package.json with "@anthropic-ai/claude-agent-sdk": "^0.2.63" or newer. This registers tools and subagents with the orchestrator instead of asking a single model call to simulate them.
+
+📚 How to Improve / Further Learning
+Claude Agent SDK TypeScript repository(opens in a new tab) is the primary reference for query(), agents, allowed tools, and event handling.
+Model Context Protocol servers repository(opens in a new tab) helps verify the exposed GitHub and ESLint tool names you should allow.
+Anthropic tool use examples(opens in a new tab) provides conceptual reinforcement for tool registration and execution flow.
+The main orchestrator agent in src/orchestrator.ts implements a class or function that utilizes the Claude Agent SDK's query (or equivalent unstable V2 client) method.
+The orchestrator is configured with the allowedTools derived from the connected MCP servers (GitHub/ESLint).
+The orchestrator is configured with the Task tool, this is an out of the box tool that spawns subagents.
+All three subagents are registered in the agents array of the query configuration.
+The orchestrator prompt (src/prompts/orchestrator.prompt.ts) explicitly instructs the model to fetch PR data and then invoke the subagents.

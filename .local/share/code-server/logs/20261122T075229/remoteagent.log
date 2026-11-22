@@ -1,0 +1,183 @@
+2026-11-22 07:52:29.852 [info] 
+
+
+
+
+2026-11-22 07:52:29.866 [info] Extension host agent started.
+2026-11-22 07:52:29.888 [info] Started initializing default profile extensions in extensions installation folder. file:///voc/work/.local/share/code-server/extensions
+2026-11-22 07:52:29.919 [info] Completed initializing default profile extensions in extensions installation folder. file:///voc/work/.local/share/code-server/extensions
+2026-11-22 07:52:38.822 [info] [172.16.6.1][7be4ba36][ManagementConnection] New connection established.
+2026-11-22 07:52:43.105 [info] [172.16.6.1][306e7031][ExtensionHostConnection] New connection established.
+2026-11-22 07:52:43.206 [info] [172.16.6.1][306e7031][ExtensionHostConnection] <60> Launched Extension Host Process.
+2026-11-22 07:54:02.738 [info] [172.16.6.1][7be4ba36][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-11-22 07:54:02.854 [info] [172.16.6.1][306e7031][ExtensionHostConnection] <60> Extension Host Process exited with code: 0, signal: null.
+2026-11-22 07:54:09.190 [info] [172.16.6.1][fe02cffc][ManagementConnection] New connection established.
+2026-11-22 07:54:11.809 [info] [172.16.6.1][871861ea][ManagementConnection] New connection established.
+2026-11-22 07:54:18.567 [info] [172.16.6.1][137ca9fd][ExtensionHostConnection] New connection established.
+2026-11-22 07:54:18.579 [info] [172.16.6.1][137ca9fd][ExtensionHostConnection] <233> Launched Extension Host Process.
+2026-11-22 07:54:39.994 [info] [172.16.6.1][fe02cffc][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2026-11-22 08:42:27.503 [info] [172.16.6.1][fe02cffc][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2026-11-22 08:42:27.505 [info] [172.16.6.1][6c2c1852][ManagementConnection] New connection established.
+2026-11-22 08:42:59.365 [info] [172.16.6.1][ea393be6][ExtensionHostConnection] New connection established.
+2026-11-22 08:42:59.383 [info] [172.16.6.1][ea393be6][ExtensionHostConnection] <17690> Launched Extension Host Process.
+2026-11-22 08:43:55.255 [info] [172.16.6.1][ea393be6][ExtensionHostConnection] The client has reconnected.
+2026-11-22 08:45:13.158 [info] [172.16.6.1][ea393be6][ExtensionHostConnection] The client has reconnected.
+2026-11-22 08:45:14.258 [info] [172.16.6.1][6c2c1852][ManagementConnection] The client has reconnected.
+2026-11-22 08:45:46.461 [info] [172.16.6.1][ea393be6][ExtensionHostConnection] The client has reconnected.
+2026-11-22 08:45:49.837 [info] [172.16.6.1][6c2c1852][ManagementConnection] The client has reconnected.
+2026-11-22 08:47:27.687 [info] [172.16.6.1][fe02cffc][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2026-11-22 08:47:58.871 [info] [172.16.6.1][6c2c1852][ManagementConnection] The client has reconnected.
+2026-11-22 08:48:02.956 [info] [172.16.6.1][ea393be6][ExtensionHostConnection] The client has reconnected.
+2026-11-22 08:50:37.833 [info] [172.16.6.1][6c2c1852][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-11-22 08:50:37.916 [info] [172.16.6.1][ea393be6][ExtensionHostConnection] <17690> Extension Host Process exited with code: 0, signal: null.
+2026-11-22 08:50:42.356 [info] [172.16.6.1][800c28fe][ManagementConnection] New connection established.
+2026-11-22 08:50:47.128 [info] [172.16.6.1][3fd9740a][ExtensionHostConnection] New connection established.
+2026-11-22 08:50:47.147 [info] [172.16.6.1][3fd9740a][ExtensionHostConnection] <17705> Launched Extension Host Process.
+2026-11-22 08:50:56.672 [info] [172.16.6.1][800c28fe][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-11-22 08:50:56.778 [info] [172.16.6.1][3fd9740a][ExtensionHostConnection] <17705> Extension Host Process exited with code: 0, signal: null.
+2026-11-22 08:50:58.698 [info] [172.16.6.1][ec531004][ManagementConnection] New connection established.
+2026-11-22 08:51:02.028 [info] [172.16.6.1][e1ce8438][ExtensionHostConnection] New connection established.
+2026-11-22 08:51:02.047 [info] [172.16.6.1][e1ce8438][ExtensionHostConnection] <17759> Launched Extension Host Process.
+2026-11-22 08:57:19.180 [info] [172.16.6.1][871861ea][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2026-11-22 09:09:34.160 [info] [172.16.6.1][ec531004][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2026-11-22 09:11:40.464 [info] [172.16.6.1][871861ea][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2026-11-22 09:11:40.466 [info] [172.16.6.1][ec531004][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2026-11-22 09:11:40.469 [info] [172.16.6.1][ec531004][ManagementConnection] The client has reconnected.
+2026-11-22 09:11:40.475 [info] [172.16.6.1][e1ce8438][ExtensionHostConnection] The client has reconnected.
+2026-11-22 09:16:40.617 [info] [172.16.6.1][871861ea][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2026-11-22 09:16:40.716 [info] [172.16.6.1][137ca9fd][ExtensionHostConnection] <233> Extension Host Process exited with code: 0, signal: null.
+2026-11-22 09:17:37.900 [info] [172.16.6.1][ec531004][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-11-22 09:17:38.053 [info] [172.16.6.1][e1ce8438][ExtensionHostConnection] <17759> Extension Host Process exited with code: 0, signal: null.
+2026-11-22 09:17:43.246 [info] [172.16.6.1][002c61d2][ManagementConnection] New connection established.
+2026-11-22 09:17:45.420 [info] [172.16.6.1][002c61d2][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-11-22 09:17:49.086 [info] [172.16.6.1][a2c66437][ManagementConnection] New connection established.
+2026-11-22 09:17:50.741 [info] [172.16.6.1][a2c66437][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-11-22 09:17:53.913 [info] [172.16.6.1][ad9045b0][ManagementConnection] New connection established.
+2026-11-22 09:17:58.309 [info] [172.16.6.1][97783b0c][ExtensionHostConnection] New connection established.
+2026-11-22 09:17:58.342 [info] [172.16.6.1][97783b0c][ExtensionHostConnection] <22461> Launched Extension Host Process.
+2026-11-22 09:22:31.266 [error] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+2026-11-22 09:22:31.270 [info] [172.16.6.1][ad9045b0][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2026-11-22 09:22:55.399 [info] [172.16.6.1][ad9045b0][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2026-11-22 09:22:55.399 [info] [172.16.6.1][b0b0f126][ManagementConnection] New connection established.
+2026-11-22 09:23:32.412 [info] [172.16.6.1][bee4090e][ManagementConnection] New connection established.
+2026-11-22 09:23:34.124 [info] [172.16.6.1][b0b0f126][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2026-11-22 09:25:07.006 [info] [172.16.6.1][b0b0f126][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2026-11-22 09:25:07.008 [info] [172.16.6.1][d72c95ff][ExtensionHostConnection] New connection established.
+2026-11-22 09:25:07.044 [info] [172.16.6.1][d72c95ff][ExtensionHostConnection] <22893> Launched Extension Host Process.
+2026-11-22 09:25:29.413 [info] [172.16.6.1][bee4090e][ManagementConnection] The client has reconnected.
+2026-11-22 09:27:55.573 [info] [172.16.6.1][ad9045b0][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2026-11-22 09:30:07.189 [info] [172.16.6.1][b0b0f126][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2026-11-22 09:36:13.320 [info] [172.16.6.1][bee4090e][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2026-11-22 09:37:50.580 [info] [172.16.6.1][bee4090e][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2026-11-22 09:37:50.582 [info] [172.16.6.1][fd8f985b][ManagementConnection] New connection established.
+2026-11-22 09:41:53.854 [info] [172.16.6.1][63b6e9c6][ManagementConnection] New connection established.
+2026-11-22 09:41:53.857 [info] [172.16.6.1][2d06f39a][ManagementConnection] New connection established.
+2026-11-22 09:41:57.402 [info] [172.16.6.1][e5a33b61][ExtensionHostConnection] New connection established.
+2026-11-22 09:41:57.421 [info] [172.16.6.1][e5a33b61][ExtensionHostConnection] <23006> Launched Extension Host Process.
+2026-11-22 09:41:58.138 [info] [172.16.6.1][f0e6b3fd][ExtensionHostConnection] New connection established.
+2026-11-22 09:41:58.168 [info] [172.16.6.1][f0e6b3fd][ExtensionHostConnection] <23017> Launched Extension Host Process.
+2026-11-22 09:42:05.916 [warning] RequestStore#acceptReply was called without receiving a matching request 221
+2026-11-22 09:42:05.916 [warning] RequestStore#acceptReply was called without receiving a matching request 222
+2026-11-22 09:42:05.921 [warning] RequestStore#acceptReply was called without receiving a matching request 223
+2026-11-22 09:42:05.926 [warning] RequestStore#acceptReply was called without receiving a matching request 224
+2026-11-22 09:42:05.931 [warning] RequestStore#acceptReply was called without receiving a matching request 225
+2026-11-22 09:42:05.936 [warning] RequestStore#acceptReply was called without receiving a matching request 226
+2026-11-22 09:42:05.942 [warning] RequestStore#acceptReply was called without receiving a matching request 227
+2026-11-22 09:42:05.946 [warning] RequestStore#acceptReply was called without receiving a matching request 228
+2026-11-22 09:42:05.951 [warning] RequestStore#acceptReply was called without receiving a matching request 229
+2026-11-22 09:42:05.955 [warning] RequestStore#acceptReply was called without receiving a matching request 230
+2026-11-22 09:42:05.960 [warning] RequestStore#acceptReply was called without receiving a matching request 231
+2026-11-22 09:42:05.971 [warning] RequestStore#acceptReply was called without receiving a matching request 232
+2026-11-22 09:42:05.971 [warning] RequestStore#acceptReply was called without receiving a matching request 233
+2026-11-22 09:42:05.975 [warning] RequestStore#acceptReply was called without receiving a matching request 234
+2026-11-22 09:42:05.981 [warning] RequestStore#acceptReply was called without receiving a matching request 235
+2026-11-22 09:42:05.985 [warning] RequestStore#acceptReply was called without receiving a matching request 236
+2026-11-22 09:42:05.991 [warning] RequestStore#acceptReply was called without receiving a matching request 237
+2026-11-22 09:42:05.996 [warning] RequestStore#acceptReply was called without receiving a matching request 238
+2026-11-22 09:42:06.006 [warning] RequestStore#acceptReply was called without receiving a matching request 239
+2026-11-22 09:42:06.019 [warning] RequestStore#acceptReply was called without receiving a matching request 240
+2026-11-22 09:42:06.025 [warning] RequestStore#acceptReply was called without receiving a matching request 241
+2026-11-22 09:42:06.030 [warning] RequestStore#acceptReply was called without receiving a matching request 242
+2026-11-22 09:42:06.035 [warning] RequestStore#acceptReply was called without receiving a matching request 243
+2026-11-22 09:42:06.040 [warning] RequestStore#acceptReply was called without receiving a matching request 244
+2026-11-22 09:42:06.044 [warning] RequestStore#acceptReply was called without receiving a matching request 245
+2026-11-22 09:42:06.049 [warning] RequestStore#acceptReply was called without receiving a matching request 246
+2026-11-22 09:42:06.054 [warning] RequestStore#acceptReply was called without receiving a matching request 247
+2026-11-22 09:42:06.059 [warning] RequestStore#acceptReply was called without receiving a matching request 248
+2026-11-22 09:42:06.063 [warning] RequestStore#acceptReply was called without receiving a matching request 249
+2026-11-22 09:42:06.068 [warning] RequestStore#acceptReply was called without receiving a matching request 250
+2026-11-22 09:42:06.073 [warning] RequestStore#acceptReply was called without receiving a matching request 251
+2026-11-22 09:42:06.077 [warning] RequestStore#acceptReply was called without receiving a matching request 252
+2026-11-22 09:42:06.082 [warning] RequestStore#acceptReply was called without receiving a matching request 253
+2026-11-22 09:42:06.139 [warning] RequestStore#acceptReply was called without receiving a matching request 254
+2026-11-22 09:42:06.140 [warning] RequestStore#acceptReply was called without receiving a matching request 255
+2026-11-22 09:42:06.144 [warning] RequestStore#acceptReply was called without receiving a matching request 256
+2026-11-22 09:42:06.148 [warning] RequestStore#acceptReply was called without receiving a matching request 257
+2026-11-22 09:42:06.153 [warning] RequestStore#acceptReply was called without receiving a matching request 258
+2026-11-22 09:42:06.157 [warning] RequestStore#acceptReply was called without receiving a matching request 259
+2026-11-22 09:42:06.162 [warning] RequestStore#acceptReply was called without receiving a matching request 260
+2026-11-22 09:42:06.167 [warning] RequestStore#acceptReply was called without receiving a matching request 261
+2026-11-22 09:42:06.171 [warning] RequestStore#acceptReply was called without receiving a matching request 262
+2026-11-22 09:42:06.177 [warning] RequestStore#acceptReply was called without receiving a matching request 263
+2026-11-22 09:42:06.181 [warning] RequestStore#acceptReply was called without receiving a matching request 264
+2026-11-22 09:42:06.222 [warning] RequestStore#acceptReply was called without receiving a matching request 265
+2026-11-22 09:42:06.223 [warning] RequestStore#acceptReply was called without receiving a matching request 266
+2026-11-22 09:42:06.227 [warning] RequestStore#acceptReply was called without receiving a matching request 267
+2026-11-22 09:42:06.232 [warning] RequestStore#acceptReply was called without receiving a matching request 268
+2026-11-22 09:42:06.237 [warning] RequestStore#acceptReply was called without receiving a matching request 269
+2026-11-22 09:42:06.241 [warning] RequestStore#acceptReply was called without receiving a matching request 270
+2026-11-22 09:42:06.246 [warning] RequestStore#acceptReply was called without receiving a matching request 271
+2026-11-22 09:42:06.252 [warning] RequestStore#acceptReply was called without receiving a matching request 272
+2026-11-22 09:42:06.256 [warning] RequestStore#acceptReply was called without receiving a matching request 273
+2026-11-22 09:42:06.261 [warning] RequestStore#acceptReply was called without receiving a matching request 274
+2026-11-22 09:42:06.266 [warning] RequestStore#acceptReply was called without receiving a matching request 275
+2026-11-22 09:42:06.300 [warning] RequestStore#acceptReply was called without receiving a matching request 276
+2026-11-22 09:42:06.301 [warning] RequestStore#acceptReply was called without receiving a matching request 277
+2026-11-22 09:42:06.305 [warning] RequestStore#acceptReply was called without receiving a matching request 278
+2026-11-22 09:42:06.311 [warning] RequestStore#acceptReply was called without receiving a matching request 279
+2026-11-22 09:42:06.315 [warning] RequestStore#acceptReply was called without receiving a matching request 280
+2026-11-22 09:42:06.319 [warning] RequestStore#acceptReply was called without receiving a matching request 281
+2026-11-22 09:42:06.323 [warning] RequestStore#acceptReply was called without receiving a matching request 282
+2026-11-22 09:42:06.328 [warning] RequestStore#acceptReply was called without receiving a matching request 283
+2026-11-22 09:42:06.332 [warning] RequestStore#acceptReply was called without receiving a matching request 284
+2026-11-22 09:42:06.337 [warning] RequestStore#acceptReply was called without receiving a matching request 285
+2026-11-22 09:42:06.342 [warning] RequestStore#acceptReply was called without receiving a matching request 286
+2026-11-22 09:42:06.348 [warning] RequestStore#acceptReply was called without receiving a matching request 287
+2026-11-22 09:42:06.351 [warning] RequestStore#acceptReply was called without receiving a matching request 288
+2026-11-22 09:42:06.356 [warning] RequestStore#acceptReply was called without receiving a matching request 289
+2026-11-22 09:42:06.361 [warning] RequestStore#acceptReply was called without receiving a matching request 290
+2026-11-22 09:42:06.366 [warning] RequestStore#acceptReply was called without receiving a matching request 291
+2026-11-22 09:42:06.370 [warning] RequestStore#acceptReply was called without receiving a matching request 292
+2026-11-22 09:42:06.374 [warning] RequestStore#acceptReply was called without receiving a matching request 293
+2026-11-22 09:42:06.378 [warning] RequestStore#acceptReply was called without receiving a matching request 294
+2026-11-22 09:42:06.383 [warning] RequestStore#acceptReply was called without receiving a matching request 295
+2026-11-22 09:42:06.388 [warning] RequestStore#acceptReply was called without receiving a matching request 296
+2026-11-22 09:42:06.398 [warning] RequestStore#acceptReply was called without receiving a matching request 297
+2026-11-22 09:42:08.258 [warning] RequestStore#acceptReply was called without receiving a matching request 298
+2026-11-22 09:42:08.259 [warning] RequestStore#acceptReply was called without receiving a matching request 299
+2026-11-22 09:42:08.266 [warning] RequestStore#acceptReply was called without receiving a matching request 300
+2026-11-22 09:42:08.275 [warning] RequestStore#acceptReply was called without receiving a matching request 301
+2026-11-22 09:42:08.284 [warning] RequestStore#acceptReply was called without receiving a matching request 302
+2026-11-22 09:42:08.291 [warning] RequestStore#acceptReply was called without receiving a matching request 303
+2026-11-22 09:42:08.298 [warning] RequestStore#acceptReply was called without receiving a matching request 304
+2026-11-22 09:42:08.306 [warning] RequestStore#acceptReply was called without receiving a matching request 305
+2026-11-22 09:42:08.312 [warning] RequestStore#acceptReply was called without receiving a matching request 306
+2026-11-22 09:42:08.317 [warning] RequestStore#acceptReply was called without receiving a matching request 307
+2026-11-22 09:42:08.325 [warning] RequestStore#acceptReply was called without receiving a matching request 308
+2026-11-22 09:42:50.755 [info] [172.16.6.1][bee4090e][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2026-11-22 09:42:50.841 [info] [172.16.6.1][97783b0c][ExtensionHostConnection] <22461> Extension Host Process exited with code: 0, signal: null.
+2026-11-22 09:50:48.047 [warning] RequestStore#acceptReply was called without receiving a matching request 309
+2026-11-22 09:50:48.049 [warning] RequestStore#acceptReply was called without receiving a matching request 310
+2026-11-22 09:50:48.053 [warning] RequestStore#acceptReply was called without receiving a matching request 311
+2026-11-22 09:50:48.057 [warning] RequestStore#acceptReply was called without receiving a matching request 312
+2026-11-22 09:50:48.063 [warning] RequestStore#acceptReply was called without receiving a matching request 313
+2026-11-22 09:50:48.067 [warning] RequestStore#acceptReply was called without receiving a matching request 314
+2026-11-22 09:50:48.072 [warning] RequestStore#acceptReply was called without receiving a matching request 315
+2026-11-22 09:50:48.077 [warning] RequestStore#acceptReply was called without receiving a matching request 316
+2026-11-22 09:50:48.081 [warning] RequestStore#acceptReply was called without receiving a matching request 317
+2026-11-22 09:50:48.086 [warning] RequestStore#acceptReply was called without receiving a matching request 318
+2026-11-22 09:50:48.090 [warning] RequestStore#acceptReply was called without receiving a matching request 319
+2026-11-22 09:57:06.573 [info] [172.16.6.1][fd8f985b][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2026-11-22 10:03:04.263 [info] [172.16.6.1][2d06f39a][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2026-11-22 10:03:04.328 [info] [172.16.6.1][63b6e9c6][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...

@@ -1,0 +1,20 @@
+import { AgentDefinition } from '@anthropic-ai/sdk/lib/agents.js';
+import { refactoringSuggesterPrompt } from '../prompts/index.js';
+
+export const refactoringSuggester: AgentDefinition = {
+  name: 'refactoring-suggester',
+  description:
+    'Identifies opportunities to improve code structure and modernize patterns. Looks for design pattern improvements, modernization opportunities, and code clarity enhancements. Differentiates from code quality by focusing on structure and maintainability.',
+  model: 'inherit',
+  instructions: refactoringSuggesterPrompt,
+  tools: [
+    {
+      type: 'builtin',
+      name: 'bash',
+    },
+    {
+      type: 'builtin',
+      name: 'str_replace_based_edit_tool',
+    },
+  ],
+};

@@ -1,0 +1,121 @@
+import Anthropic from '@anthropic-ai/sdk';
+import { codeQualityAnalyzer, testCoverageAnalyzer, refactoringSuggester } from './agents/index.js';
+import { orchestratorPrompt } from './prompts/index.js';
+import { ReviewReport, ReviewReportSchema } from './types/index.js';
+import { Logger } from './utils/logger.js';
+
+export class Orchestrator {
+  private client: Anthropic;
+
+  constructor() {
+    this.client = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+    });
+  }
+
+  async reviewPullRequest(owner: string, repo: string, prNumber: number): Promise<ReviewReport> {
+    Logger.info('Starting code review', { owner, repo, prNumber });
+
+    // Build the user message with PR information
+    const userMessage = `Please review the following GitHub pull request and provide a comprehensive code review:
+
+Repository: ${owner}/${repo}
+Pull Request Number: ${prNumber}
+
+Analyze the PR by considering perspectives from three specialized analysts:
+
+1. **Code Quality Analysis**: Analyze security vulnerabilities, performance issues, and maintainability concerns
+2. **Test Coverage Analysis**: Evaluate test completeness and suggest specific test cases
+3. **Refactoring Opportunities**: Identify structural improvements and modernization opportunities
+
+Aggregate all results into a comprehensive JSON report with an overall score and summary.
+
+Respond with ONLY a valid JSON object (no markdown, no code blocks) matching this structure:
+{
+  "owner": "${owner}",
+  "repo": "${repo}",
+  "prNumber": ${prNumber},
+  "codeQuality": {
+    "agent": "code-quality-analyzer",
+    "summary": "...",
+    "issues": [...],
+    "score": 0,
+    "topRisks": [...]
+  },
+  "testCoverage": {
+    "agent": "test-coverage-analyzer",
+    "summary": "...",
+    "coverageGaps": [...],
+    "suggestedTestCases": [...],
+    "estimatedCoverage": 0
+  },
+  "refactoring": {
+    "agent": "refactoring-suggester",
+    "summary": "...",
+    "opportunities": [...],
+    "modernizationSuggestions": [...]
+  },
+  "overallScore": 0,
+  "summary": "...",
+  "timestamp": "2024-01-01T00:00:00Z"
+}`;
+
+    try {
+      Logger.info('Calling Claude for code review');
+
+      const response = await this.client.messages.create({
+        model: 'claude-opus-4-5-20251101',
+        max_tokens: 4096,
+        system: orchestratorPrompt,
+        messages: [
+          {
+            role: 'user',
+            content: userMessage,
+          },
+        ],
+      });
+
+      // Extract text content from response
+      let responseText = '';
+      for (const block of response.content) {
+        if (block.type === 'text') {
+          responseText += block.text;
+        }
+      }
+
+      if (!responseText) {
+        throw new Error('No text response received from orchestrator');
+      }
+
+      Logger.debug('Raw response', { response: responseText.substring(0, 200) });
+
+      // Try to extract JSON from the response
+      let jsonStr = responseText;
+
+      // If the response contains markdown code blocks, extract from them
+      const jsonMatch = responseText.match(/```(?:json)?\s*([\s\S]*?)```/);
+      if (jsonMatch) {
+        jsonStr = jsonMatch[1].trim();
+      } else {
+        // Try to find JSON object in the response
+        const jsonStart = responseText.indexOf('{');
+        const jsonEnd = responseText.lastIndexOf('}');
+        if (jsonStart !== -1 && jsonEnd !== -1) {
+          jsonStr = responseText.substring(jsonStart, jsonEnd + 1);
+        }
+      }
+
+      const output = JSON.parse(jsonStr);
+      const validatedReport = ReviewReportSchema.parse(output);
+
+      Logger.info('Code review completed successfully', {
+        overallScore: validatedReport.overallScore,
+      });
+
+      return validatedReport;
+    } catch (error) {
+      Logger.error('Error during orchestration', error);
+      throw error;
+    }
+  }
+}

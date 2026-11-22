@@ -1,0 +1,37 @@
+Your project has useful specialized prompts, but Claude Skills are not actually integrated yet. None of the submitted agent definitions includes Skill in a tools array, and none of the prompt files gives an instruction such as “use the Skill tool when an available skill is relevant.”
+
+✅ What you did well
+Your codeQualityAnalyzerPrompt is a natural place to apply skills such as security analysis or TypeScript best practices.
+Your three-agent design makes it easy to assign different skill guidance to different analysis roles.
+The descriptions in codeQualityAnalyzer, testCoverageAnalyzer, and refactoringSuggester already identify when specialized knowledge would be helpful.
+⚠️ What can be improved
+Add Skills guidance to all three prompts eventually, not just one. For example, the test coverage agent could use test-design skills, while the refactoring agent could use architecture-pattern skills.
+If you create custom .claude/skills/ content, name skills around review tasks such as security-analysis, typescript-patterns, or test-strategy so the prompts can invoke them clearly.
+❌ What is missing or incorrect
+No submitted subagent currently has both the capability and instruction to use Claude Skills. In src/agents/code-quality-analyzer.ts, codeQualityAnalyzer has no tools field, and src/prompts/code-quality-analyzer.prompt.ts does not mention the Skill tool or when to call it. The same is true for testCoverageAnalyzer and refactoringSuggester. 👉 This is a core rubric requirement.
+
+One concrete fix is to add Skill to at least one agent and update that agent’s prompt:
+
+export const codeQualityAnalyzer: AgentDefinition = {
+  name: 'code-quality-analyzer',
+  description: 'Analyzes code for security vulnerabilities, performance issues, and maintainability concerns.',
+  instructions: codeQualityAnalyzerPrompt,
+  model: 'inherit',
+  tools: ['Read', 'Grep', 'Glob', 'Skill'],
+};
+
+export const codeQualityAnalyzerPrompt = `...
+## Skill Usage
+Use the Skill tool when an available skill is relevant to the files being reviewed.
+For JavaScript or TypeScript code, prefer skills related to JavaScript best practices,
+TypeScript patterns, security analysis, or code review before finalizing findings.
+...`;
+This works because the agent is both permitted to invoke Skill and explicitly instructed when skill usage is appropriate.
+
+📚 How to Improve / Further Learning
+Anthropic tool use overview(opens in a new tab) explains the broader tool invocation model that Skills build on.
+Claude Code settings and tools documentation(opens in a new tab) is useful for understanding how tool availability is configured in Claude Code-style workflows.
+OWASP Code Review Guide(opens in a new tab) can inspire practical security-focused skill content for your code-quality-analyzer.
+At least one subagent is configured to invoke Claude Skills from the .claude/skills/ directory.
+The skills invoked are appropriate for the agent's analysis tasks (e.g., javascript-best-practices, typescript-patterns, python-code-review, or security-analysis for code quality analysis).
+The agent's prompt or configuration includes instructions on when and how to leverage skills during analysis.

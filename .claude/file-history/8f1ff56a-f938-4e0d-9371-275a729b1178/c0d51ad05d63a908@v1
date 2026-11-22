@@ -1,0 +1,39 @@
+import { ReviewReport } from '../types/index.js';
+
+export class ReportGenerator {
+  static formatReport(report: ReviewReport): string {
+    return JSON.stringify(report, null, 2);
+  }
+
+  static saveReport(report: ReviewReport, filePath: string): void {
+    // This would be implemented in Part 2
+    console.log(`Would save report to ${filePath}`);
+  }
+
+  static generateMarkdown(report: ReviewReport): string {
+    const markdown = `# Code Review Report
+
+**Repository:** ${report.owner}/${report.repo}
+**PR Number:** #${report.prNumber}
+**Overall Score:** ${report.overallScore}/100
+**Generated:** ${report.timestamp}
+
+## Summary
+${report.summary}
+
+## Code Quality Analysis
+- Score: ${report.codeQuality.score}/100
+- Summary: ${report.codeQuality.summary}
+- Top Risks: ${report.codeQuality.topRisks.join(', ')}
+
+## Test Coverage
+- Estimated Coverage: ${report.testCoverage.estimatedCoverage}%
+- Summary: ${report.testCoverage.summary}
+
+## Refactoring Opportunities
+- Summary: ${report.refactoring.summary}
+- Count: ${report.refactoring.opportunities.length}
+`;
+    return markdown;
+  }
+}

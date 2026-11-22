@@ -1,0 +1,18 @@
+import { codeQualityAnalyzerPrompt } from '../prompts/index.js';
+
+export interface AgentDefinition {
+  name: string;
+  description: string;
+  instructions: string;
+  tools: string[];
+  model?: 'inherit' | string;
+}
+
+export const codeQualityAnalyzer: AgentDefinition = {
+  name: 'code-quality-analyzer',
+  description:
+    'Analyzes code for security vulnerabilities, performance issues, and maintainability concerns. Uses code inspection tools and security analysis skills to identify potential risks and provide severity-rated issues.',
+  instructions: codeQualityAnalyzerPrompt,
+  model: 'inherit',
+  tools: ['Read', 'Grep', 'Glob', 'Skill'],
+};

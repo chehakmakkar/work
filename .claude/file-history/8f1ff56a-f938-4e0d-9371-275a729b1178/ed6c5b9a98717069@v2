@@ -1,0 +1,9 @@
+import { refactoringSuggesterPrompt } from '../prompts/index.js';
+import type { AgentDefinition } from './code-quality-analyzer.js';
+
+export const refactoringSuggester: AgentDefinition = {
+  name: 'refactoring-suggester',
+  description:
+    'Identifies opportunities to improve code structure and modernize patterns. Looks for design pattern improvements, modernization opportunities, and code clarity enhancements. Differentiates from code quality by focusing on structure and maintainability.',
+  instructions: refactoringSuggesterPrompt,
+};

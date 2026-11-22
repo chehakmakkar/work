@@ -1,0 +1,40 @@
+2026-11-22 08:51:12.414 [info] Claude code extension is now active?
+2026-11-22 08:51:12.414 [info] MCP Server running on port 23122 (localhost only)
+2026-11-22 08:51:22.422 [info] Creating new Claude terminal
+2026-11-22 08:51:24.786 [info] Terminal shell integration available
+2026-11-22 08:51:36.105 [info] New WS connection from: /
+2026-11-22 08:51:36.106 [info] MCP server connected to transport
+2026-11-22 08:51:36.111 [info] [DiagnosticStreamManager] Started streaming diagnostics
+2026-11-22 08:51:36.115 [info] Registered diagnostic client: client_0
+2026-11-22 08:51:36.607 [info] Logging event: run_claude_command undefined
+2026-11-22 08:51:47.970 [info] Closing all diff tabs in the editor...
+2026-11-22 08:51:47.970 [info] Closed 0 diff tabs.
+2026-11-22 08:53:12.388 [info] Closing all diff tabs in the editor...
+2026-11-22 08:53:12.390 [info] Closed 0 diff tabs.
+2026-11-22 08:57:32.038 [info] Closing all diff tabs in the editor...
+2026-11-22 08:57:32.040 [info] Closed 0 diff tabs.
+2026-11-22 09:05:49.563 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 09:11:50.740 [info] Closing all diff tabs in the editor...
+2026-11-22 09:11:50.742 [info] Closed 0 diff tabs.
+2026-11-22 09:13:18.744 [info] Logging event: run_claude_command undefined
+2026-11-22 09:13:18.745 [info] Creating new Claude terminal
+2026-11-22 09:13:27.921 [info] New WS connection from: /
+2026-11-22 09:13:27.921 [info] Disconnecting previous WebSocket client
+2026-11-22 09:13:27.927 [info] [DiagnosticStreamManager] Unregistered client client_0. Total clients: 0
+2026-11-22 09:13:27.931 [info] [DiagnosticStreamManager] Stopped streaming diagnostics
+2026-11-22 09:13:27.935 [info] Unregistered previous diagnostic client: client_0
+2026-11-22 09:13:27.940 [info] MCP server connected to transport
+2026-11-22 09:13:27.944 [info] [DiagnosticStreamManager] Started streaming diagnostics
+2026-11-22 09:13:27.948 [info] Registered diagnostic client: client_1
+2026-11-22 09:13:27.955 [info] WS client disconnected
+2026-11-22 09:13:27.971 [info] New WS connection from: /
+2026-11-22 09:13:27.971 [info] Disconnecting previous WebSocket client
+2026-11-22 09:13:27.975 [info] [DiagnosticStreamManager] Unregistered client client_1. Total clients: 0
+2026-11-22 09:13:27.979 [info] [DiagnosticStreamManager] Stopped streaming diagnostics
+2026-11-22 09:13:27.983 [info] Unregistered previous diagnostic client: client_1
+2026-11-22 09:13:27.987 [info] MCP server connected to transport
+2026-11-22 09:13:27.992 [info] [DiagnosticStreamManager] Started streaming diagnostics
+2026-11-22 09:13:27.996 [info] Registered diagnostic client: client_2
+2026-11-22 09:13:28.043 [info] WS client disconnected
+2026-11-22 09:17:36.906 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 09:17:37.922 [info] Updated lock file for port 23122 with new workspace folders

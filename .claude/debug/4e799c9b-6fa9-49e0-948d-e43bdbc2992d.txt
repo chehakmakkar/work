@@ -1,0 +1,427 @@
+2026-11-22T09:13:23.299Z [DEBUG] [init] configureGlobalMTLS starting
+2026-11-22T09:13:23.299Z [DEBUG] [init] configureGlobalMTLS complete
+2026-11-22T09:13:23.299Z [DEBUG] [init] configureGlobalAgents starting
+2026-11-22T09:13:23.300Z [DEBUG] [init] configureGlobalAgents complete
+2026-11-22T09:13:23.314Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-11-22T09:13:23.314Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-11-22T09:13:23.314Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-11-22T09:13:23.319Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-11-22T09:13:23.352Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-11-22T09:13:23.352Z [DEBUG] Total LSP servers loaded: 0
+2026-11-22T09:13:23.352Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-11-22T09:13:23.352Z [DEBUG] LSP manager initialized with 0 servers
+2026-11-22T09:13:23.352Z [DEBUG] [STARTUP] MCP configs loaded in 33ms
+2026-11-22T09:13:23.352Z [DEBUG] LSP server manager initialized successfully
+2026-11-22T09:13:23.352Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-11-22T09:13:23.353Z [DEBUG] [STARTUP] Running setup()...
+2026-11-22T09:13:23.389Z [DEBUG] Stats cache does not exist, returning empty cache
+2026-11-22T09:13:23.389Z [DEBUG] Stats cache empty, processing all historical data in background
+2026-11-22T09:13:23.486Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/voc/work/.claude/skills, project=[]
+2026-11-22T09:13:23.506Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-11-22T09:13:23.513Z [DEBUG] Error log sink initialized
+2026-11-22T09:13:23.540Z [DEBUG] Writing to temp file: /voc/work/.claude/todos/4e799c9b-6fa9-49e0-948d-e43bdbc2992d-agent-4e799c9b-6fa9-49e0-948d-e43bdbc2992d.json.tmp.21441.1795338803540
+2026-11-22T09:13:23.557Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-11-22T09:13:23.557Z [DEBUG] Renaming /voc/work/.claude/todos/4e799c9b-6fa9-49e0-948d-e43bdbc2992d-agent-4e799c9b-6fa9-49e0-948d-e43bdbc2992d.json.tmp.21441.1795338803540 to /voc/work/.claude/todos/4e799c9b-6fa9-49e0-948d-e43bdbc2992d-agent-4e799c9b-6fa9-49e0-948d-e43bdbc2992d.json
+2026-11-22T09:13:23.561Z [DEBUG] File /voc/work/.claude/todos/4e799c9b-6fa9-49e0-948d-e43bdbc2992d-agent-4e799c9b-6fa9-49e0-948d-e43bdbc2992d.json written atomically
+2026-11-22T09:13:23.595Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-11-22T09:13:23.595Z [DEBUG] Total plugin skills loaded: 0
+2026-11-22T09:13:23.595Z [DEBUG] Total plugin commands loaded: 0
+2026-11-22T09:13:23.595Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-11-22T09:13:23.599Z [DEBUG] [STARTUP] setup() completed in 246ms
+2026-11-22T09:13:23.599Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-11-22T09:13:23.608Z [DEBUG] Total plugin agents loaded: 0
+2026-11-22T09:13:23.608Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, legacy commands: 0)
+2026-11-22T09:13:23.609Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-11-22T09:13:23.610Z [DEBUG] [STARTUP] Commands and agents loaded in 11ms
+2026-11-22T09:13:23.610Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-11-22T09:13:23.613Z [DEBUG] [render] initYoga starting
+2026-11-22T09:13:23.653Z [DEBUG] [Claude in Chrome] Chrome base path does not exist: /voc/work/.config/google-chrome
+2026-11-22T09:13:23.662Z [DEBUG] [render] initYoga complete
+2026-11-22T09:13:23.705Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2026-11-22T09:13:23.705Z [DEBUG] Looking for shell config file: /voc/work/.bashrc
+2026-11-22T09:13:23.705Z [DEBUG] Snapshots directory: /voc/work/.claude/shell-snapshots
+2026-11-22T09:13:23.708Z [DEBUG] Creating snapshot at: /voc/work/.claude/shell-snapshots/snapshot-bash-1795338803705-4vdsuc.sh
+2026-11-22T09:13:23.708Z [DEBUG] Shell binary exists: true
+2026-11-22T09:13:23.708Z [DEBUG] Execution timeout: 10000ms
+2026-11-22T09:13:23.724Z [DEBUG] [keybindings] KeybindingSetup initialized with 40 bindings, 0 warnings
+2026-11-22T09:13:23.758Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-11-22T09:13:23.891Z [DEBUG] Shell snapshot created successfully (1648 bytes)
+2026-11-22T09:13:27.302Z [DEBUG] [STARTUP] showSetupScreens() completed in 3692ms
+2026-11-22T09:13:27.322Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-11-22T09:13:27.373Z [DEBUG] Writing to temp file: /voc/work/.claude.json.tmp.21441.1795338807373
+2026-11-22T09:13:27.373Z [DEBUG] Preserving file permissions: 100600
+2026-11-22T09:13:27.390Z [DEBUG] Temp file written successfully, size: 4236 bytes
+2026-11-22T09:13:27.394Z [DEBUG] Applied original permissions to temp file
+2026-11-22T09:13:27.394Z [DEBUG] Renaming /voc/work/.claude.json.tmp.21441.1795338807373 to /voc/work/.claude.json
+2026-11-22T09:13:27.410Z [DEBUG] File /voc/work/.claude.json written atomically
+2026-11-22T09:13:27.439Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-11-22T09:13:27.439Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:13:27.439Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-11-22T09:13:27.441Z [DEBUG] [render] initYoga starting
+2026-11-22T09:13:27.442Z [DEBUG] [render] initYoga complete
+2026-11-22T09:13:27.479Z [DEBUG] Skills and commands included in Skill tool:
+2026-11-22T09:13:27.480Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:13:27.480Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:13:27.480Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:13:27.487Z [DEBUG] Git remote URL: null
+2026-11-22T09:13:27.487Z [DEBUG] No git remote URL found
+2026-11-22T09:13:27.487Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-11-22T09:13:27.499Z [DEBUG] [keybindings] KeybindingSetup initialized with 40 bindings, 0 warnings
+2026-11-22T09:13:27.688Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-11-22T09:13:27.688Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-11-22T09:13:27.690Z [DEBUG] Official marketplace auto-install skipped: unknown
+2026-11-22T09:13:27.690Z [DEBUG] performStartupChecks called
+2026-11-22T09:13:27.692Z [DEBUG] Starting background plugin installations
+2026-11-22T09:13:27.693Z [DEBUG] performBackgroundPluginInstallations called
+2026-11-22T09:13:27.726Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-11-22T09:13:27.726Z [DEBUG] Showing marketplace installation failure notification
+2026-11-22T09:13:27.730Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-11-22T09:13:27.788Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-11-22T09:13:27.911Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2026-11-22T09:13:27.972Z [DEBUG] Writing to temp file: /voc/work/.claude.json.tmp.21441.1795338807972
+2026-11-22T09:13:27.972Z [DEBUG] Preserving file permissions: 100600
+2026-11-22T09:13:27.990Z [DEBUG] Temp file written successfully, size: 4236 bytes
+2026-11-22T09:13:27.994Z [DEBUG] Applied original permissions to temp file
+2026-11-22T09:13:27.994Z [DEBUG] Renaming /voc/work/.claude.json.tmp.21441.1795338807972 to /voc/work/.claude.json
+2026-11-22T09:13:28.022Z [DEBUG] File /voc/work/.claude.json written atomically
+2026-11-22T09:13:28.036Z [DEBUG] MCP server "ide": Connection failed after 132ms: WebSocket is not open. Cannot start transport.
+2026-11-22T09:13:28.036Z [ERROR] MCP server "ide" Connection failed: WebSocket is not open. Cannot start transport.
+2026-11-22T09:13:28.431Z [ERROR] Error: Error: 1: Command failed with ENOENT: code --force --install-extension anthropic.claude-code
+spawn code ENOENT 
+    at F27 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:3004:3956)
+    at async K27 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:3004:1579)
+2026-11-22T09:13:28.759Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-11-22T09:13:28.759Z [DEBUG] AutoUpdater: Using global update method
+2026-11-22T09:13:29.032Z [ERROR] hK1: hK1: Insufficient permissions for global npm install.
+    at Uq0 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2929:1139)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async XEA (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2939:43)
+    at async file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:4935:32615
+2026-11-22T09:13:52.612Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-22T09:13:52.612Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-22T09:13:52.612Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-11-22T09:13:52.612Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-11-22T09:13:52.664Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-11-22T09:13:52.664Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:13:52.664Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-11-22T09:13:52.689Z [DEBUG] FileHistory: Added snapshot for 4e268bd7-66d3-4bd3-a0a4-a1d628165aac, tracking 0 files
+2026-11-22T09:13:52.732Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-22T09:13:52.735Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:13:52.735Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:13:52.737Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:13:52.738Z [DEBUG] Total plugin output styles loaded: 0
+2026-11-22T09:13:52.752Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-11-22T09:13:52.768Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:13:52.768Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:13:52.768Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:13:53.301Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:13:53.362Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:13:53.659Z [ERROR] Error: Error: 1P event logging: 30 events failed to export
+    at ua1.queueFailedEvents (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:2038)
+    at async ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1195)
+2026-11-22T09:13:53.660Z [ERROR] Error: Error: {"stack":"Error: Failed to export 30 events\n    at ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1297)","message":"Failed to export 30 events","name":"Error"}
+    at TH0.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:34862)
+    at Zn1.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:10521)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
+    at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245
+2026-11-22T09:13:55.336Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-11-22T09:13:55.347Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-11-22T09:13:55.347Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:13:55.347Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:13:55.361Z [DEBUG] tree-sitter: WASM files not found
+2026-11-22T09:13:55.401Z [DEBUG] No session environment scripts found
+2026-11-22T09:13:55.455Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-22T09:13:55.456Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:13:55.456Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:13:55.457Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:13:55.473Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-11-22T09:13:55.473Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:13:55.473Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:13:55.500Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-22T09:13:55.500Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-22T09:13:55.500Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-11-22T09:13:55.500Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-11-22T09:13:55.524Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-11-22T09:13:55.534Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:13:55.534Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:13:55.534Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:13:56.006Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:13:56.030Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:13:57.467Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-11-22T09:13:57.480Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-11-22T09:13:57.480Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:13:57.480Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:13:57.579Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-22T09:13:57.580Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:13:57.580Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:13:57.581Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:13:57.601Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-11-22T09:13:57.601Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:13:57.601Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:13:57.630Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-22T09:13:57.630Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-22T09:13:57.630Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-11-22T09:13:57.630Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-11-22T09:13:57.656Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-11-22T09:13:57.663Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:13:57.663Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:13:57.663Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:13:58.132Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:13:58.278Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:13:59.204Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-11-22T09:13:59.212Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-11-22T09:13:59.212Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:13:59.213Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:13:59.635Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-22T09:13:59.636Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:13:59.636Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:13:59.636Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:13:59.655Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-11-22T09:13:59.655Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:13:59.655Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:13:59.683Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-22T09:13:59.683Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-22T09:13:59.683Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-11-22T09:13:59.683Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-11-22T09:13:59.726Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-11-22T09:13:59.740Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:13:59.740Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:13:59.740Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:14:00.119Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:14:00.263Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:14:02.227Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-11-22T09:14:02.236Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-11-22T09:14:02.236Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:14:02.236Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:14:02.250Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-22T09:14:02.250Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-22T09:14:02.250Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-22T09:14:02.251Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:14:02.251Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:14:02.251Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:14:02.251Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:14:02.252Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:14:02.252Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:14:02.252Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:14:02.253Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:14:02.253Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:14:02.743Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:14:02.831Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:14:02.893Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:14:03.067Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "zip:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2026-11-22T09:14:03.082Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-11-22T09:14:03.092Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-11-22T09:14:03.092Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:14:03.092Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:14:09.672Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-11-22T09:14:10.475Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-11-22T09:14:10.475Z [DEBUG] AutoUpdater: Using global update method
+2026-11-22T09:14:10.775Z [ERROR] hK1: hK1: Insufficient permissions for global npm install.
+    at Uq0 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2929:1139)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async XEA (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2939:43)
+    at async file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:4935:32615
+2026-11-22T09:14:23.367Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-22T09:14:23.368Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:14:23.368Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:14:23.368Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:14:23.385Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-11-22T09:14:23.385Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:14:23.385Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:14:23.414Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-22T09:14:23.414Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-22T09:14:23.414Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-11-22T09:14:23.414Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-11-22T09:14:23.451Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-11-22T09:14:23.462Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:14:23.462Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:14:23.462Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:14:23.988Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:14:24.007Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:14:25.234Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-11-22T09:14:25.243Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-11-22T09:14:25.243Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:14:25.243Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:14:25.276Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//tmp/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+2026-11-22T09:14:25.287Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-11-22T09:14:25.295Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-11-22T09:14:25.295Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:14:25.295Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:14:25.346Z [ERROR] Error: Error: 1P event logging: 97 events failed to export
+    at ua1.queueFailedEvents (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:2038)
+    at async ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1195)
+2026-11-22T09:14:25.346Z [ERROR] Error: Error: {"stack":"Error: Failed to export 97 events\n    at ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1297)","message":"Failed to export 97 events","name":"Error"}
+    at TH0.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:34862)
+    at Zn1.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:10521)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
+    at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245
+2026-11-22T09:14:31.294Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-11-22T09:14:31.294Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:14:31.294Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-11-22T09:15:01.331Z [ERROR] Error: Error: 1P event logging: 2 events failed to export
+    at ua1.queueFailedEvents (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:2038)
+    at async ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1195)
+2026-11-22T09:15:01.331Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events\n    at ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1297)","message":"Failed to export 2 events","name":"Error"}
+    at TH0.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:34862)
+    at Zn1.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:10521)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
+    at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245
+2026-11-22T09:15:30.957Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-11-22T09:15:30.994Z [DEBUG] Tool search disabled: MCPSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-22T09:15:30.995Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:15:30.996Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:15:30.996Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:15:31.018Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-11-22T09:15:31.018Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:15:31.018Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-11-22T09:15:31.055Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-11-22T09:15:31.055Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-11-22T09:15:31.055Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-11-22T09:15:31.055Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-11-22T09:15:31.097Z [DEBUG] Auto tool search disabled: 0 chars (threshold: 50000, 10% of context)
+2026-11-22T09:15:31.111Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-22T09:15:31.111Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-22T09:15:31.111Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-22T09:15:31.629Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:15:31.762Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-11-22T09:15:31.762Z [DEBUG] AutoUpdater: Using global update method
+2026-11-22T09:15:31.906Z [DEBUG] Stream started - received first chunk
+2026-11-22T09:15:32.129Z [ERROR] hK1: hK1: Insufficient permissions for global npm install.
+    at Uq0 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2929:1139)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async XEA (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2939:43)
+    at async file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:4935:32615
+2026-11-22T09:15:34.971Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-11-22T09:15:34.971Z [DEBUG] Found 0 hook matchers in settings
+2026-11-22T09:15:34.971Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-11-22T09:16:00.926Z [ERROR] Error: Error: 1P event logging: 17 events failed to export
+    at ua1.queueFailedEvents (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:2038)
+    at async ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1195)
+2026-11-22T09:16:00.926Z [ERROR] Error: Error: {"stack":"Error: Failed to export 17 events\n    at ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1297)","message":"Failed to export 17 events","name":"Error"}
+    at TH0.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:34862)
+    at Zn1.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:10521)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
+    at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245
+2026-11-22T09:18:27.396Z [DEBUG] Failed to check metrics opt-out status: Request failed with status code 401
+2026-11-22T09:18:27.396Z [ERROR] AxiosError: AxiosError: Request failed with status code 401
+    at cy (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:55:1138)
+    at IncomingMessage.<anonymous> (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:56:9867)
+    at IncomingMessage.emit (node:events:532:35)
+    at IncomingMessage.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at cUA.request (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:58:2132)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async RS5 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:35194)
+    at async G (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:115:26696)
+    at async UI1 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:35748)
+    at async xH0.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:36561)
+2026-11-22T09:18:27.396Z [DEBUG] Metrics export disabled by organization setting
+2026-11-22T09:45:32.453Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-11-22T09:45:32.453Z [DEBUG] AutoUpdater: Using global update method
+2026-11-22T09:45:32.871Z [ERROR] hK1: hK1: Insufficient permissions for global npm install.
+    at Uq0 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2929:1139)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async XEA (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2939:43)
+    at async Object.current (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:4935:32615)
+2026-11-22T09:46:02.912Z [ERROR] Error: Error: 1P event logging: 1 events failed to export
+    at ua1.queueFailedEvents (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:2038)
+    at async ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1195)
+2026-11-22T09:46:02.912Z [ERROR] Error: Error: {"stack":"Error: Failed to export 1 events\n    at ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1297)","message":"Failed to export 1 events","name":"Error"}
+    at TH0.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:34862)
+    at Zn1.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:10521)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
+    at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245
+2026-11-22T10:15:31.700Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-11-22T10:15:31.700Z [DEBUG] AutoUpdater: Using global update method
+2026-11-22T10:15:31.988Z [ERROR] hK1: hK1: Insufficient permissions for global npm install.
+    at Uq0 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2929:1139)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async XEA (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2939:43)
+    at async Object.current (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:4935:32615)
+2026-11-22T10:16:02.042Z [ERROR] Error: Error: 1P event logging: 1 events failed to export
+    at ua1.queueFailedEvents (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:2038)
+    at async ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1195)
+2026-11-22T10:16:02.042Z [ERROR] Error: Error: {"stack":"Error: Failed to export 1 events\n    at ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1297)","message":"Failed to export 1 events","name":"Error"}
+    at TH0.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:34862)
+    at Zn1.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:10521)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
+    at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245
+2026-11-22T10:45:31.732Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-11-22T10:45:31.732Z [DEBUG] AutoUpdater: Using global update method
+2026-11-22T10:45:32.010Z [ERROR] hK1: hK1: Insufficient permissions for global npm install.
+    at Uq0 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2929:1139)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async XEA (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2939:43)
+    at async Object.current (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:4935:32615)
+2026-11-22T10:46:02.056Z [ERROR] Error: Error: 1P event logging: 1 events failed to export
+    at ua1.queueFailedEvents (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:2038)
+    at async ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1195)
+2026-11-22T10:46:02.056Z [ERROR] Error: Error: {"stack":"Error: Failed to export 1 events\n    at ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1297)","message":"Failed to export 1 events","name":"Error"}
+    at TH0.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:34862)
+    at Zn1.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:10521)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
+    at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245
+2026-11-22T11:15:31.732Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-11-22T11:15:31.732Z [DEBUG] AutoUpdater: Using global update method
+2026-11-22T11:15:32.000Z [ERROR] hK1: hK1: Insufficient permissions for global npm install.
+    at Uq0 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2929:1139)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async XEA (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2939:43)
+    at async Object.current (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:4935:32615)
+2026-11-22T11:16:02.051Z [ERROR] Error: Error: 1P event logging: 1 events failed to export
+    at ua1.queueFailedEvents (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:2038)
+    at async ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1195)
+2026-11-22T11:16:02.051Z [ERROR] Error: Error: {"stack":"Error: Failed to export 1 events\n    at ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1297)","message":"Failed to export 1 events","name":"Error"}
+    at TH0.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:34862)
+    at Zn1.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:10521)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
+    at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245
+2026-11-22T11:45:31.727Z [DEBUG] AutoUpdater: Detected installation type: npm-global
+2026-11-22T11:45:31.727Z [DEBUG] AutoUpdater: Using global update method
+2026-11-22T11:45:32.001Z [ERROR] hK1: hK1: Insufficient permissions for global npm install.
+    at Uq0 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2929:1139)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async XEA (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2939:43)
+    at async Object.current (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:4935:32615)
+2026-11-22T11:46:02.040Z [ERROR] Error: Error: 1P event logging: 1 events failed to export
+    at ua1.queueFailedEvents (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:2038)
+    at async ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1195)
+2026-11-22T11:46:02.040Z [ERROR] Error: Error: {"stack":"Error: Failed to export 1 events\n    at ua1.doExport (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:261:1297)","message":"Failed to export 1 events","name":"Error"}
+    at TH0.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:2283:34862)
+    at Zn1.error (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:10521)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:41546
+    at $u3 (file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:255:42092)
+    at file:///usr/local/lib/node_modules/@anthropic-ai/claude-code/cli.js:256:20245

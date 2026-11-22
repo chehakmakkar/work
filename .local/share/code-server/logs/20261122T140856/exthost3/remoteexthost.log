@@ -1,0 +1,57 @@
+2026-11-22 14:09:49.670 [info] Extension host with pid 111 started
+2026-11-22 14:09:49.674 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/-3148e01f/vscode.lock': Lock acquired.
+2026-11-22 14:09:50.292 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2026-11-22 14:09:50.298 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-11-22 14:09:50.306 [info] ExtensionService#_doActivateExtension synedra.auto-run-command, startup: true, activationEvent: '*'
+2026-11-22 14:09:50.612 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-11-22 14:09:50.620 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-11-22 14:09:57.315 [info] Not activating extension 'franneck94.c-cpp-runner': Timed out while searching for 'workspaceContains' pattern *.h,*.c,*.hh,*.cc,*.hxx,*.cxx,*.hpp,*.cpp,*.cu
+2026-11-22 14:09:57.323 [info] Not activating extension 'ms-python.python': Timed out while searching for 'workspaceContains' pattern **/pylock.*.toml
+2026-11-22 14:09:57.328 [info] Not activating extension 'muhammad-sammy.csharp': Timed out while searching for 'workspaceContains' pattern **/*.{csproj,csx,cake}
+2026-11-22 14:09:57.333 [info] Not activating extension 'redhat.java': Timed out while searching for 'workspaceContains' pattern */pom.xml,*/build.gradle,*/settings.gradle,*/build.gradle.kts,*/settings.gradle.kts,*/.classpath
+2026-11-22 14:09:57.774 [info] Eager extensions activated
+2026-11-22 14:09:57.780 [info] ExtensionService#_doActivateExtension Anthropic.claude-code, startup: false, activationEvent: 'onStartupFinished'
+2026-11-22 14:09:57.787 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2026-11-22 14:09:57.794 [info] ExtensionService#_doActivateExtension cweijan.vscode-database-client2, startup: false, activationEvent: 'onStartupFinished'
+2026-11-22 14:09:57.799 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2026-11-22 14:09:57.806 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-11-22 14:09:57.812 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2026-11-22 14:09:57.817 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-11-22 14:09:57.823 [info] ExtensionService#_doActivateExtension ms-dotnettools.vscode-dotnet-runtime, startup: false, activationEvent: 'onStartupFinished'
+2026-11-22 14:10:00.325 [error] Error: Extension dbclient-jdbc not found!
+	at r.upgradeJDBC (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:177276:13)
+	at r.initTreeView (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:187998:8)
+	at r.init (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:187995:52)
+	at _Lr (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:188948:10)
+	at vy.kb (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:15342)
+	at vy.jb (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:15087)
+	at file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:13245
+	at async Lb.n (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:13382)
+	at async Lb.m (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:13345)
+	at async Lb.l (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:12801)
+2026-11-22 14:10:00.651 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-11-22 14:10:00.657 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-11-22 14:10:00.664 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-11-22 14:10:00.671 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-11-22 14:10:00.961 [warning] DiagnosticCollection with name 'eslint' does already exist.
+2026-11-22 14:11:54.590 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-11-22 14:12:25.060 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-11-22 14:12:43.026 [warning] [Decorations] CAPPING events from decorations provider vscode.git 796
+2026-11-22 14:12:44.314 [warning] [Decorations] CAPPING events from decorations provider vscode.git 796
+2026-11-22 14:12:50.196 [warning] [Decorations] CAPPING events from decorations provider vscode.git 796
+2026-11-22 14:12:56.407 [error] Error: Failed to execute git
+	at t.Git._exec (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:34808)
+	at async t.Git.exec (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:33931)
+	at async z.exec (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:39705)
+	at async z.getRemotesGit (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:63777)
+	at async z.getRemotes (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:63509)
+	at async Promise.all (index 1)
+	at async O._updateModelState (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:561932)
+	at async O.updateModelState (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:561755)
+	at async O.run (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:560969)
+	at async O.status (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/git/dist/main.js:2:540568)
+2026-11-22 14:15:51.393 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-11-22 14:15:51.395 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+2026-11-22 14:34:17.156 [info] Extension host terminating: received terminate message from renderer
+2026-11-22 14:34:17.158 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/-3148e01f/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-11-22 14:34:17.218 [info] Extension host with pid 111 exiting with code 0

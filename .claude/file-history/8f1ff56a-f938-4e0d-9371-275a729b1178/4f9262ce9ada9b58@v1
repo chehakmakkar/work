@@ -1,0 +1,130 @@
+import Anthropic from '@anthropic-ai/sdk';
+import { zodToJsonSchema } from 'zod-to-json-schema';
+import { codeQualityAnalyzer, testCoverageAnalyzer, refactoringSuggester } from './agents/index.js';
+import { orchestratorPrompt } from './prompts/index.js';
+import { ReviewReport, ReviewReportSchema } from './types/index.js';
+import { Logger } from './utils/logger.js';
+
+export class Orchestrator {
+  private client: Anthropic;
+
+  constructor() {
+    this.client = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+    });
+  }
+
+  async reviewPullRequest(owner: string, repo: string, prNumber: number): Promise<ReviewReport> {
+    Logger.info('Starting code review', { owner, repo, prNumber });
+
+    // Convert schema to JSON Schema for structured output
+    const jsonSchema = zodToJsonSchema(ReviewReportSchema, {
+      $refStrategy: 'root',
+    }) as Record<string, unknown>;
+
+    // Build the user message with PR information
+    const userMessage = `Please review the following GitHub pull request and provide a comprehensive code review:
+
+Repository: ${owner}/${repo}
+Pull Request Number: ${prNumber}
+
+Analyze the PR using all three specialized agents:
+1. Use the code-quality-analyzer agent to analyze security vulnerabilities, performance issues, and maintainability concerns
+2. Use the test-coverage-analyzer agent to evaluate test coverage and suggest test cases
+3. Use the refactoring-suggester agent to identify structural improvements and modernization opportunities
+
+Aggregate all results into a comprehensive ReviewReport with an overall score and summary.`;
+
+    try {
+      const response = await this.client.agents.query({
+        agents: [codeQualityAnalyzer, testCoverageAnalyzer, refactoringSuggester],
+        messages: [
+          {
+            role: 'user',
+            content: userMessage,
+          },
+        ],
+        model: 'claude-opus-4-5-20251101',
+        instructions: orchestratorPrompt,
+        allowedTools: ['task', 'str_replace_based_edit_tool', 'bash'],
+        outputFormat: {
+          type: 'json_schema',
+          json_schema: {
+            name: 'ReviewReport',
+            schema: jsonSchema,
+            strict: true,
+          },
+        },
+        maxTurns: 20,
+        permissionMode: 'approval_not_required',
+      });
+
+      // Collect the full response
+      let finalOutput: ReviewReport | null = null;
+
+      for await (const event of response) {
+        if (event.type === 'content_block_start') {
+          if (event.content_block.type === 'json') {
+            Logger.debug('JSON content block started');
+          }
+        } else if (event.type === 'content_block_delta') {
+          if (event.delta.type === 'json_delta') {
+            Logger.debug('Received JSON delta', { partial: event.delta.partial_json });
+          }
+        } else if (event.type === 'content_block_stop') {
+          Logger.debug('Content block finished');
+        } else if (event.type === 'message_stop') {
+          Logger.info('Message generation completed');
+        }
+      }
+
+      // Re-query to get structured output
+      const structuredResponse = await this.client.agents.query({
+        agents: [codeQualityAnalyzer, testCoverageAnalyzer, refactoringSuggester],
+        messages: [
+          {
+            role: 'user',
+            content: userMessage,
+          },
+        ],
+        model: 'claude-opus-4-5-20251101',
+        instructions: orchestratorPrompt,
+        allowedTools: ['task', 'str_replace_based_edit_tool', 'bash'],
+        outputFormat: {
+          type: 'json_schema',
+          json_schema: {
+            name: 'ReviewReport',
+            schema: jsonSchema,
+            strict: true,
+          },
+        },
+        maxTurns: 20,
+        permissionMode: 'approval_not_required',
+      });
+
+      // Extract structured output from response
+      let outputStr = '';
+      for await (const event of structuredResponse) {
+        if (event.type === 'content_block_delta' && event.delta.type === 'json_delta') {
+          outputStr += event.delta.partial_json;
+        }
+      }
+
+      if (!outputStr) {
+        throw new Error('No structured output received from orchestrator');
+      }
+
+      const output = JSON.parse(outputStr);
+      const validatedReport = ReviewReportSchema.parse(output);
+
+      Logger.info('Code review completed successfully', {
+        overallScore: validatedReport.overallScore,
+      });
+
+      return validatedReport;
+    } catch (error) {
+      Logger.error('Error during orchestration', error);
+      throw error;
+    }
+  }
+}

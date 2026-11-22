@@ -1,0 +1,309 @@
+his guide walks you through building the core of your multi-agent code review system. By the end of Part 1, you'll have a minimal working system that can analyze a GitHub pull request using three specialized subagents.
+
+What you'll build in Part 1:
+
+MCP server configuration for GitHub and ESLint integration
+Three specialized subagents with targeted prompts
+Main orchestrator that coordinates subagents and aggregates results
+What comes next in Part 2:
+
+Production utilities (error handling, rate limiting)
+Complete CLI application with validation
+Comprehensive testing
+Final deliverables (9 PR reports for submission)
+Project Structure
+project/starter/
+├── src/
+│   ├── agents/              # YOU IMPLEMENT: Three subagent definitions
+│   │   ├── code-quality-analyzer.ts
+│   │   ├── test-coverage-analyzer.ts
+│   │   ├── refactoring-suggester.ts
+│   │   └── index.ts
+│   ├── prompts/             # YOU IMPLEMENT: Prompts for orchestrator and subagents
+│   │   ├── orchestrator.prompt.ts
+│   │   ├── code-quality-analyzer.prompt.ts
+│   │   ├── test-coverage-analyzer.prompt.ts
+│   │   ├── refactoring-suggester.prompt.ts
+│   │   └── index.ts
+│   ├── config/              # YOU IMPLEMENT: MCP server configurations
+│   │   └── mcp.config.ts
+│   ├── utils/               # Part 2: Error handler and rate limiter
+│   │   ├── error-handler.ts
+│   │   ├── rate-limiter.ts
+│   │   ├── logger.ts        # PROVIDED
+│   │   ├── report-generator.ts  # PROVIDED
+│   │   └── index.ts
+│   ├── types/               # PROVIDED: Zod schemas for all data structures
+│   │   └── index.ts
+│   ├── orchestrator.ts      # YOU IMPLEMENT: Main coordination logic
+│   └── main.ts              # Part 2: Entry point with validation
+├── tests/                   # Part 2: Unit tests
+│   └── schemas.test.ts
+├── .claude/
+│   └── skills/              # PROVIDED: Example skill
+│       └── code-review-best-practices/
+├── .env.example             # PROVIDED: Environment template
+├── package.json             # PROVIDED: Dependencies and scripts
+└── tsconfig.json            # PROVIDED: TypeScript configuration
+Legend:
+
+YOU IMPLEMENT (Part 1) - Files covered in this guide
+Part 2 - Files covered in the next guide
+PROVIDED - Files already implemented for you
+Phase 1: Foundation & Configuration
+Deliverable: MCP Configuration
+File to complete: src/config/mcp.config.ts
+
+The MCP configuration file needs two server definitions to enable external tool integration.
+
+Research Questions
+Before implementing, answer these questions:
+
+GitHub MCP Server:
+
+What package provides the GitHub MCP server? (Hint: Check the MCP servers repository)
+What environment variable does it expect for authentication?
+How do you map your GITHUB_TOKEN from .env to the expected variable name?
+ESLint MCP Server:
+
+What package provides the ESLint MCP server?
+Does it require authentication?
+Implementation Guide
+Study the TODO comments in src/config/mcp.config.ts. Each MCP server configuration needs:
+
+type: The transport type (what type of process communication?)
+command: How to run the server (which command lets you run npm packages without installing?)
+args: Arguments to pass to the command
+env: Environment variables the server needs
+Resources:
+
+MCP Servers Repository(opens in a new tab)
+GitHub MCP Documentation(opens in a new tab)
+Phase 2: Building the Subagents
+Deliverable: Three Specialized Subagents
+You need to create three agent definition files in src/agents/. Each agent will be defined using the AgentDefinition type from the Claude Agent SDK.
+
+Understanding Agent Definitions
+Before writing code, study the Claude Agent SDK documentation to understand:
+
+What properties does an AgentDefinition have?
+What does the model: 'inherit' setting mean?
+What's the purpose of the description field? (Hint: How does the orchestrator know when to use each agent?)
+What tools can agents use?
+Task 2.1: Code Quality Analyzer
+File to create: src/agents/code-quality-analyzer.ts
+
+This agent analyzes code for security vulnerabilities, performance issues, and maintainability concerns.
+
+Questions to Answer:
+
+What tools does this agent need to analyze code files? (Think about reading files, searching for patterns)
+How can this agent leverage Claude Skills for specialized analysis?
+What should the description say to help the orchestrator understand this agent's purpose?
+Key Requirement: This agent must include the Skill tool and be configured to invoke skills like javascript-best-practices or security-analysis.
+
+Expected Output: Look at CodeQualityResultSchema in src/types/index.ts to understand what this agent should return.
+
+Task 2.2: Test Coverage Analyzer
+File to create: src/agents/test-coverage-analyzer.ts
+
+This agent evaluates test completeness and suggests specific test cases.
+
+Questions to Answer:
+
+How can an AI estimate test coverage without running tests? (Think about comparing source files with test files)
+What makes a test suggestion actionable vs. generic?
+What tools does this agent need?
+Expected Output: Study TestCoverageResultSchema in src/types/index.ts.
+
+Task 2.3: Refactoring Suggester
+File to create: src/agents/refactoring-suggester.ts
+
+This agent identifies opportunities to improve code structure and modernize patterns.
+
+Questions to Answer:
+
+What types of refactoring should this agent look for? (Modernization, design patterns, code clarity)
+How does this differ from code quality analysis?
+What tools are needed?
+Expected Output: Study RefactoringResultSchema in src/types/index.ts.
+
+Task 2.4: Export Your Agents
+File to create: src/agents/index.ts
+
+Export all three agents so they can be imported by the orchestrator. Use ES module syntax (.js extensions in import paths).
+
+Deliverable: Prompt Engineering
+Create targeted prompts in src/prompts/ for each agent.
+
+Prompt Engineering Principles
+Effective prompts must:
+
+Be specific about the task - What exactly should the agent analyze?
+Reference the output format - How should findings be structured?
+Provide evaluation criteria - What makes an issue "high severity"?
+Give examples - Show what good vs. bad findings look like (optional but helpful)
+Explain tool usage - When to invoke skills, what tools are available
+Task 2.5-2.7: Write Agent Prompts
+Files to create:
+
+src/prompts/code-quality-analyzer.prompt.ts
+src/prompts/test-coverage-analyzer.prompt.ts
+src/prompts/refactoring-suggester.prompt.ts
+For each prompt, consider:
+
+What specific issues should this agent look for?
+What severity levels are appropriate? (high/medium/low)
+How should the agent leverage Claude Skills?
+What output format is expected? (Reference the Zod schemas)
+Tip: Export each prompt as a string constant. Study the Zod schemas in src/types/index.ts to understand the exact structure agents should return.
+
+Task 2.8: Export Your Prompts
+File to create: src/prompts/index.ts
+
+Export all prompts for easy importing.
+
+Phase 3: The Orchestrator Logic
+Deliverable: Main Orchestrator Implementation
+The orchestrator coordinates all subagents and aggregates their findings into a structured report.
+
+Task 3.1: Orchestrator Prompt
+File to create: src/prompts/orchestrator.prompt.ts
+
+This is the most critical prompt. It must instruct the main agent to:
+
+Fetch PR data using GitHub MCP tools
+Invoke all three subagents for analysis
+Aggregate results into the ReviewReport schema
+Key Concept - Explicit Invocation:
+
+To reliably trigger subagents, your prompt should use explicit language like:
+
+"Use the code-quality-analyzer agent to analyze src/file.ts"
+NOT "The code-quality-analyzer should analyze..."
+Questions to Answer:
+
+Which MCP tool fetches pull request data? (Hint: Check GitHub MCP documentation)
+Should subagents run in parallel or sequentially? Why?
+How should the orchestrator handle if a subagent fails?
+What should the final output structure look like? (Study ReviewReportSchema)
+Task 3.2: Implement the Orchestrator Class
+File to complete: src/orchestrator.ts
+
+You need to implement a class that uses the query function from the Claude Agent SDK.
+
+Key Implementation Questions:
+
+Configuration:
+
+What should you pass to the agents option?
+What tools should be in allowedTools? (Critical: Must include Task tool for spawning subagents)
+Which model should you use? (Hint: Should it be hardcoded?)
+What's a reasonable maxTurns value for multi-agent coordination?
+What permissionMode is appropriate for automated CI/CD use?
+Structured Outputs:
+
+How do you convert a Zod schema to JSON Schema? (Hint: zod-to-json-schema package)
+What options are needed for SDK compatibility? (Hint: Check SDK structured outputs documentation)
+How do you configure outputFormat in the query function?
+Result Processing:
+
+The query function returns an async iterable - how do you iterate over it?
+How do you extract the final structured_output?
+How do you validate it matches your Zod schema? (Hint: safeParse vs parse)
+Resources:
+
+Claude Agent SDK Documentation(opens in a new tab)
+SDK Subagents Guide(opens in a new tab)
+SDK Structured Outputs(opens in a new tab)
+Phase 1-3 Validation Checkpoint
+Before moving to Part 2, verify your core implementation:
+
+System Configuration
+
+
+Subagent Implementation
+
+
+
+
+Orchestrator Logic
+
+
+
+
+
+Quick Test
+Create a minimal test in src/main.ts:
+
+import { Orchestrator } from './orchestrator.js';
+
+const orchestrator = new Orchestrator();
+const result = await orchestrator.reviewPullRequest('octocat', 'Hello-World', 1);
+console.log(JSON.stringify(result, null, 2));
+Run with: npm run dev -- octocat Hello-World 1
+
+Expected behavior:
+
+MCP servers connect successfully
+All three subagents are invoked
+Final output is a structured JSON object matching ReviewReportSchema
+If this works, you're ready for Part 2!
+
+Troubleshooting
+"Agent not found" errors
+Symptom: Orchestrator can't find subagents
+
+Common Causes:
+
+Agents not registered in the agents array in orchestrator.ts
+Incorrect export/import paths (missing .js extensions for ES modules)
+Agent names in prompt don't match agent definition names
+Structured output doesn't match schema
+Symptom: Zod validation fails on final report
+
+Common Causes:
+
+Prompts don't clearly specify the expected output format
+JSON schema conversion missing { $refStrategy: 'root' } option
+Schema has required fields that agents aren't populating
+Subagents not being invoked
+Symptom: Only orchestrator runs, subagents never spawn
+
+Common Causes:
+
+Task tool not included in allowedTools
+Orchestrator prompt doesn't use explicit invocation language
+maxTurns too low for multi-agent coordination
+Agent descriptions unclear (orchestrator doesn't know when to use them)
+MCP connection failures
+Symptom: "Failed to connect to MCP server" errors
+
+Common Causes:
+
+Incorrect package names in MCP configuration
+Missing environment variables (GITHUB_TOKEN)
+npx not available in PATH
+Type errors during compilation
+Symptom: TypeScript compilation fails with type errors
+
+Common Causes:
+
+Missing return types on functions
+Incorrect imports (use .js extensions for ES modules)
+MCP config not properly typed (use as const for string literals)
+Hints for Part 1 (Use Sparingly!)
+Hint 1: MCP Tool Names
+Hint 2: Explicit Invocation Pattern
+Hint 3: JSON Schema Conversion
+Hint 4: Async Iteration
+Hint 5: Invoking Skills
+Next Steps
+Once your core implementation is working, proceed to Part 2: Production Ready & Final Deliverables where you'll add:
+
+Robust error handling with exponential backoff retry logic
+Rate limiting to prevent API throttling
+Complete CLI application with argument validation
+Comprehensive unit and integration tests
+Final deliverables: 9 PR reports for submission
+Part 2 will transform your working prototype into a production-ready system!

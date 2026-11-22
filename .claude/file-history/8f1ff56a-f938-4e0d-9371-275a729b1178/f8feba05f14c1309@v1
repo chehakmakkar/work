@@ -1,0 +1,20 @@
+import { AgentDefinition } from '@anthropic-ai/sdk/lib/agents.js';
+import { testCoverageAnalyzerPrompt } from '../prompts/index.js';
+
+export const testCoverageAnalyzer: AgentDefinition = {
+  name: 'test-coverage-analyzer',
+  description:
+    'Evaluates test completeness and suggests specific test cases. Analyzes the relationship between source files and test files to identify coverage gaps and recommend actionable test cases with clear descriptions and priorities.',
+  model: 'inherit',
+  instructions: testCoverageAnalyzerPrompt,
+  tools: [
+    {
+      type: 'builtin',
+      name: 'bash',
+    },
+    {
+      type: 'builtin',
+      name: 'str_replace_based_edit_tool',
+    },
+  ],
+};

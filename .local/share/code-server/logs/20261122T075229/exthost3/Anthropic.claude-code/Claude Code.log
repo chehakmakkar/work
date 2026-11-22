@@ -1,0 +1,274 @@
+2026-11-22 07:54:22.869 [info] Claude code extension is now active?
+2026-11-22 07:54:22.869 [info] MCP Server running on port 46346 (localhost only)
+2026-11-22 07:56:33.252 [info] Creating new Claude terminal
+2026-11-22 07:56:35.572 [info] Terminal shell integration available
+2026-11-22 07:57:43.670 [info] New WS connection from: /
+2026-11-22 07:57:43.672 [info] MCP server connected to transport
+2026-11-22 07:57:43.676 [info] [DiagnosticStreamManager] Started streaming diagnostics
+2026-11-22 07:57:43.681 [info] Registered diagnostic client: client_0
+2026-11-22 07:57:44.173 [info] Logging event: run_claude_command undefined
+2026-11-22 07:57:53.230 [info] Closing all diff tabs in the editor...
+2026-11-22 07:57:53.230 [info] Closed 0 diff tabs.
+2026-11-22 07:58:32.962 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:58:41.145 [info] Closing all diff tabs in the editor...
+2026-11-22 07:58:41.145 [info] Closed 0 diff tabs.
+2026-11-22 07:59:02.359 [info] diff from /voc/work/project/starter/package.json to /voc/work/project/starter/package.json as ✻ [Claude Code] package.json (f0043e) ⧉
+2026-11-22 07:59:02.862 [info] leftTempFileProvider.createFile /voc/work/project/starter/package.json
+2026-11-22 07:59:03.391 [info] Closing all diff tabs in the editor...
+2026-11-22 07:59:03.391 [info] Closed 0 diff tabs.
+2026-11-22 07:59:04.112 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:04.194 [info] diff result undefined ✻ [Claude Code] package.json (f0043e) ⧉ {"$mid":1,"path":"/voc/work/project/starter/package.json","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/package.json","path":"/voc/work/project/starter/package.json","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 07:59:04.551 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:07.769 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:07.800 [info] tab_closed ✻ [Claude Code] package.json (f0043e) ⧉
+2026-11-22 07:59:07.848 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 2 files
+2026-11-22 07:59:10.164 [info] diff from /voc/work/project/starter/tsconfig.json to /voc/work/project/starter/tsconfig.json as ✻ [Claude Code] tsconfig.json (3d2e46) ⧉
+2026-11-22 07:59:10.636 [info] leftTempFileProvider.createFile /voc/work/project/starter/tsconfig.json
+2026-11-22 07:59:11.075 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:11.189 [info] Closing all diff tabs in the editor...
+2026-11-22 07:59:11.189 [info] Closed 0 diff tabs.
+2026-11-22 07:59:11.839 [info] diff result undefined ✻ [Claude Code] tsconfig.json (3d2e46) ⧉ {"$mid":1,"path":"/voc/work/project/starter/tsconfig.json","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/tsconfig.json","path":"/voc/work/project/starter/tsconfig.json","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 07:59:12.341 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:12.578 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:14.353 [info] tab_closed ✻ [Claude Code] tsconfig.json (3d2e46) ⧉
+2026-11-22 07:59:14.374 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 2 files
+2026-11-22 07:59:15.709 [info] diff from /voc/work/project/starter/.env.example to /voc/work/project/starter/.env.example as ✻ [Claude Code] .env.example (221ae3) ⧉
+2026-11-22 07:59:16.180 [info] leftTempFileProvider.createFile /voc/work/project/starter/.env.example
+2026-11-22 07:59:16.655 [info] Closing all diff tabs in the editor...
+2026-11-22 07:59:16.655 [info] Closed 0 diff tabs.
+2026-11-22 07:59:17.196 [info] diff result undefined ✻ [Claude Code] .env.example (221ae3) ⧉ {"$mid":1,"path":"/voc/work/project/starter/.env.example","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/.env.example","path":"/voc/work/project/starter/.env.example","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 07:59:19.354 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:23.046 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:24.838 [info] diff from /voc/work/project/starter/src/types/index.ts to /voc/work/project/starter/src/types/index.ts as ✻ [Claude Code] index.ts (bb2611) ⧉
+2026-11-22 07:59:25.305 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/types/index.ts
+2026-11-22 07:59:25.779 [info] Closing all diff tabs in the editor...
+2026-11-22 07:59:26.285 [info] Closed 1 diff tabs.
+2026-11-22 07:59:26.335 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 2 files
+2026-11-22 07:59:26.359 [info] tab_closed ✻ [Claude Code] .env.example (221ae3) ⧉
+2026-11-22 07:59:27.246 [info] diff result undefined ✻ [Claude Code] index.ts (bb2611) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/types/index.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/types/index.ts","path":"/voc/work/project/starter/src/types/index.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 07:59:30.055 [info] diff from /voc/work/project/starter/src/utils/logger.ts to /voc/work/project/starter/src/utils/logger.ts as ✻ [Claude Code] logger.ts (f7d791) ⧉
+2026-11-22 07:59:30.529 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/utils/logger.ts
+2026-11-22 07:59:30.999 [info] Closing all diff tabs in the editor...
+2026-11-22 07:59:31.485 [info] Closed 1 diff tabs.
+2026-11-22 07:59:31.535 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:31.564 [info] tab_closed ✻ [Claude Code] index.ts (bb2611) ⧉
+2026-11-22 07:59:32.464 [info] diff result undefined ✻ [Claude Code] logger.ts (f7d791) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/utils/logger.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/utils/logger.ts","path":"/voc/work/project/starter/src/utils/logger.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 07:59:35.823 [info] diff from /voc/work/project/starter/src/utils/report-generator.ts to /voc/work/project/starter/src/utils/report-generator.ts as ✻ [Claude Code] report-generator.ts (1f2645) ⧉
+2026-11-22 07:59:36.297 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/utils/report-generator.ts
+2026-11-22 07:59:36.772 [info] Closing all diff tabs in the editor...
+2026-11-22 07:59:37.259 [info] Closed 1 diff tabs.
+2026-11-22 07:59:37.283 [info] tab_closed ✻ [Claude Code] logger.ts (f7d791) ⧉
+2026-11-22 07:59:37.309 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:37.815 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:38.022 [info] diff result undefined ✻ [Claude Code] report-generator.ts (1f2645) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/utils/report-generator.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/utils/report-generator.ts","path":"/voc/work/project/starter/src/utils/report-generator.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 07:59:41.335 [info] diff from /voc/work/project/starter/src/config/mcp.config.ts to /voc/work/project/starter/src/config/mcp.config.ts as ✻ [Claude Code] mcp.config.ts (219aab) ⧉
+2026-11-22 07:59:41.426 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:41.866 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/config/mcp.config.ts
+2026-11-22 07:59:42.376 [info] Closing all diff tabs in the editor...
+2026-11-22 07:59:42.900 [info] Closed 1 diff tabs.
+2026-11-22 07:59:42.952 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:42.958 [info] tab_closed ✻ [Claude Code] report-generator.ts (1f2645) ⧉
+2026-11-22 07:59:43.625 [info] diff result undefined ✻ [Claude Code] mcp.config.ts (219aab) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/config/mcp.config.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/config/mcp.config.ts","path":"/voc/work/project/starter/src/config/mcp.config.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 07:59:44.808 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:46.446 [info] diff from /voc/work/project/starter/src/agents/code-quality-analyzer.ts to /voc/work/project/starter/src/agents/code-quality-analyzer.ts as ✻ [Claude Code] code-quality-analyzer.ts (82169a) ⧉
+2026-11-22 07:59:46.931 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/agents/code-quality-analyzer.ts
+2026-11-22 07:59:47.404 [info] Closing all diff tabs in the editor...
+2026-11-22 07:59:47.896 [info] Closed 1 diff tabs.
+2026-11-22 07:59:47.946 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:47.953 [info] tab_closed ✻ [Claude Code] mcp.config.ts (219aab) ⧉
+2026-11-22 07:59:48.148 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:48.678 [info] diff result undefined ✻ [Claude Code] code-quality-analyzer.ts (82169a) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/agents/code-quality-analyzer.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/agents/code-quality-analyzer.ts","path":"/voc/work/project/starter/src/agents/code-quality-analyzer.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 07:59:50.926 [info] diff from /voc/work/project/starter/src/agents/test-coverage-analyzer.ts to /voc/work/project/starter/src/agents/test-coverage-analyzer.ts as ✻ [Claude Code] test-coverage-analyzer.ts (aeb264) ⧉
+2026-11-22 07:59:51.393 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/agents/test-coverage-analyzer.ts
+2026-11-22 07:59:51.581 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:52.007 [info] Closing all diff tabs in the editor...
+2026-11-22 07:59:52.509 [info] Closed 1 diff tabs.
+2026-11-22 07:59:52.560 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:52.603 [info] tab_closed ✻ [Claude Code] code-quality-analyzer.ts (82169a) ⧉
+2026-11-22 07:59:53.272 [info] diff result undefined ✻ [Claude Code] test-coverage-analyzer.ts (aeb264) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/agents/test-coverage-analyzer.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/agents/test-coverage-analyzer.ts","path":"/voc/work/project/starter/src/agents/test-coverage-analyzer.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 07:59:55.143 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:56.021 [info] diff from /voc/work/project/starter/src/agents/refactoring-suggester.ts to /voc/work/project/starter/src/agents/refactoring-suggester.ts as ✻ [Claude Code] refactoring-suggester.ts (efc222) ⧉
+2026-11-22 07:59:56.503 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/agents/refactoring-suggester.ts
+2026-11-22 07:59:56.983 [info] Closing all diff tabs in the editor...
+2026-11-22 07:59:57.499 [info] Closed 1 diff tabs.
+2026-11-22 07:59:57.506 [info] tab_closed ✻ [Claude Code] test-coverage-analyzer.ts (aeb264) ⧉
+2026-11-22 07:59:57.550 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:58.372 [info] diff result undefined ✻ [Claude Code] refactoring-suggester.ts (efc222) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/agents/refactoring-suggester.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/agents/refactoring-suggester.ts","path":"/voc/work/project/starter/src/agents/refactoring-suggester.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 07:59:58.784 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:59.457 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 07:59:59.477 [info] tab_closed ✻ [Claude Code] refactoring-suggester.ts (efc222) ⧉
+2026-11-22 08:00:01.358 [info] diff from /voc/work/project/starter/src/agents/index.ts to /voc/work/project/starter/src/agents/index.ts as ✻ [Claude Code] index.ts (a62357) ⧉
+2026-11-22 08:00:01.861 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/agents/index.ts
+2026-11-22 08:00:02.169 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:02.331 [info] Closing all diff tabs in the editor...
+2026-11-22 08:00:02.331 [info] Closed 0 diff tabs.
+2026-11-22 08:00:02.879 [info] diff result undefined ✻ [Claude Code] index.ts (a62357) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/agents/index.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/agents/index.ts","path":"/voc/work/project/starter/src/agents/index.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 08:00:04.873 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:04.895 [info] tab_closed ✻ [Claude Code] index.ts (a62357) ⧉
+2026-11-22 08:00:05.551 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:08.904 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:11.303 [info] diff from /voc/work/project/starter/src/prompts/orchestrator.prompt.ts to /voc/work/project/starter/src/prompts/orchestrator.prompt.ts as ✻ [Claude Code] orchestrator.prompt.ts (ae1816) ⧉
+2026-11-22 08:00:11.791 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/prompts/orchestrator.prompt.ts
+2026-11-22 08:00:12.341 [info] Closing all diff tabs in the editor...
+2026-11-22 08:00:12.341 [info] Closed 0 diff tabs.
+2026-11-22 08:00:12.401 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:12.876 [info] diff result undefined ✻ [Claude Code] orchestrator.prompt.ts (ae1816) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/prompts/orchestrator.prompt.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/prompts/orchestrator.prompt.ts","path":"/voc/work/project/starter/src/prompts/orchestrator.prompt.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 08:00:13.881 [info] tab_closed ✻ [Claude Code] orchestrator.prompt.ts (ae1816) ⧉
+2026-11-22 08:00:13.897 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:18.995 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:19.858 [info] diff from /voc/work/project/starter/src/prompts/code-quality-analyzer.prompt.ts to /voc/work/project/starter/src/prompts/code-quality-analyzer.prompt.ts as ✻ [Claude Code] code-quality-analyzer.prompt.ts (5a8270) ⧉
+2026-11-22 08:00:20.339 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/prompts/code-quality-analyzer.prompt.ts
+2026-11-22 08:00:20.865 [info] Closing all diff tabs in the editor...
+2026-11-22 08:00:20.865 [info] Closed 0 diff tabs.
+2026-11-22 08:00:21.433 [info] diff result undefined ✻ [Claude Code] code-quality-analyzer.prompt.ts (5a8270) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/prompts/code-quality-analyzer.prompt.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/prompts/code-quality-analyzer.prompt.ts","path":"/voc/work/project/starter/src/prompts/code-quality-analyzer.prompt.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 08:00:23.464 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:25.327 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:25.349 [info] tab_closed ✻ [Claude Code] code-quality-analyzer.prompt.ts (5a8270) ⧉
+2026-11-22 08:00:31.293 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:32.297 [info] diff from /voc/work/project/starter/src/prompts/test-coverage-analyzer.prompt.ts to /voc/work/project/starter/src/prompts/test-coverage-analyzer.prompt.ts as ✻ [Claude Code] test-coverage-analyzer.prompt.ts (13a1c7) ⧉
+2026-11-22 08:00:32.775 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/prompts/test-coverage-analyzer.prompt.ts
+2026-11-22 08:00:33.356 [info] Closing all diff tabs in the editor...
+2026-11-22 08:00:33.356 [info] Closed 0 diff tabs.
+2026-11-22 08:00:34.595 [info] diff result undefined ✻ [Claude Code] test-coverage-analyzer.prompt.ts (13a1c7) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/prompts/test-coverage-analyzer.prompt.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/prompts/test-coverage-analyzer.prompt.ts","path":"/voc/work/project/starter/src/prompts/test-coverage-analyzer.prompt.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 08:00:38.310 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:41.523 [info] diff from /voc/work/project/starter/src/prompts/refactoring-suggester.prompt.ts to /voc/work/project/starter/src/prompts/refactoring-suggester.prompt.ts as ✻ [Claude Code] refactoring-suggester.prompt.ts (a920c4) ⧉
+2026-11-22 08:00:41.992 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/prompts/refactoring-suggester.prompt.ts
+2026-11-22 08:00:42.466 [info] Closing all diff tabs in the editor...
+2026-11-22 08:00:42.954 [info] Closed 1 diff tabs.
+2026-11-22 08:00:43.005 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:43.035 [info] tab_closed ✻ [Claude Code] test-coverage-analyzer.prompt.ts (13a1c7) ⧉
+2026-11-22 08:00:43.681 [info] diff result undefined ✻ [Claude Code] refactoring-suggester.prompt.ts (a920c4) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/prompts/refactoring-suggester.prompt.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/prompts/refactoring-suggester.prompt.ts","path":"/voc/work/project/starter/src/prompts/refactoring-suggester.prompt.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 08:00:44.795 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:45.187 [info] diff from /voc/work/project/starter/src/prompts/index.ts to /voc/work/project/starter/src/prompts/index.ts as ✻ [Claude Code] index.ts (69d30d) ⧉
+2026-11-22 08:00:45.653 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/prompts/index.ts
+2026-11-22 08:00:46.123 [info] Closing all diff tabs in the editor...
+2026-11-22 08:00:46.602 [info] Closed 1 diff tabs.
+2026-11-22 08:00:46.653 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:46.698 [info] tab_closed ✻ [Claude Code] refactoring-suggester.prompt.ts (a920c4) ⧉
+2026-11-22 08:00:47.343 [info] diff result undefined ✻ [Claude Code] index.ts (69d30d) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/prompts/index.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/prompts/index.ts","path":"/voc/work/project/starter/src/prompts/index.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 08:00:51.005 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:57.218 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:00:59.273 [info] diff from /voc/work/project/starter/src/orchestrator.ts to /voc/work/project/starter/src/orchestrator.ts as ✻ [Claude Code] orchestrator.ts (7977ed) ⧉
+2026-11-22 08:00:59.749 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/orchestrator.ts
+2026-11-22 08:01:00.220 [info] Closing all diff tabs in the editor...
+2026-11-22 08:01:00.789 [info] Closed 1 diff tabs.
+2026-11-22 08:01:00.824 [info] tab_closed ✻ [Claude Code] index.ts (69d30d) ⧉
+2026-11-22 08:01:00.839 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:01.536 [info] diff result undefined ✻ [Claude Code] orchestrator.ts (7977ed) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/orchestrator.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/orchestrator.ts","path":"/voc/work/project/starter/src/orchestrator.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 08:01:02.071 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:04.644 [info] diff from /voc/work/project/starter/src/main.ts to /voc/work/project/starter/src/main.ts as ✻ [Claude Code] main.ts (506176) ⧉
+2026-11-22 08:01:05.113 [info] leftTempFileProvider.createFile /voc/work/project/starter/src/main.ts
+2026-11-22 08:01:05.587 [info] Closing all diff tabs in the editor...
+2026-11-22 08:01:06.066 [info] Closed 1 diff tabs.
+2026-11-22 08:01:06.116 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:06.157 [info] tab_closed ✻ [Claude Code] orchestrator.ts (7977ed) ⧉
+2026-11-22 08:01:06.790 [info] diff result undefined ✻ [Claude Code] main.ts (506176) ⧉ {"$mid":1,"path":"/voc/work/project/starter/src/main.ts","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/main.ts","path":"/voc/work/project/starter/src/main.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 08:01:08.532 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:13.459 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:19.792 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:26.026 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:30.911 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:38.687 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:46.488 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:54.328 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:01:54.822 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:02.689 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:03.420 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:06.069 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:09.452 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:10.756 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:11.187 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:12.953 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:16.600 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:16.710 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:19.061 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:19.977 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:22.764 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:23.393 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:25.838 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:26.069 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:26.765 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:30.179 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:31.067 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:36.826 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:37.512 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:41.125 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:42.437 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:44.518 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:47.464 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:47.849 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:51.263 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:51.949 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:54.805 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:57.067 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:02:58.473 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:01.885 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:02.406 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:05.250 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:08.610 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:12.107 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:12.337 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:18.679 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:20.901 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:23.184 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:30.990 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:33.339 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:38.023 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:42.520 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:44.470 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:46.180 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:50.689 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:03:56.924 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:00.282 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:01.758 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:08.239 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:13.186 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:19.497 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:25.733 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:30.599 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:38.417 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:46.201 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:54.028 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:04:54.531 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:05:02.339 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:05:05.783 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:05:09.162 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:05:12.662 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:05:16.294 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:05:19.685 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:05:23.074 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:05:26.484 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:05:29.889 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:07:50.770 [info] diff from /voc/work/project/starter/src/agents/code-quality-analyzer.ts to /voc/work/project/starter/src/agents/code-quality-analyzer.ts as ✻ [Claude Code] code-quality-analyzer.ts (41443b) ⧉
+2026-11-22 08:07:51.753 [info] Closing all diff tabs in the editor...
+2026-11-22 08:07:52.265 [info] Closed 1 diff tabs.
+2026-11-22 08:07:52.275 [info] tab_closed ✻ [Claude Code] main.ts (506176) ⧉
+2026-11-22 08:07:52.315 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 2 files
+2026-11-22 08:07:52.850 [info] diff result undefined ✻ [Claude Code] code-quality-analyzer.ts (41443b) ⧉ {"$mid":1,"external":"file:///voc/work/project/starter/src/agents/code-quality-analyzer.ts","path":"/voc/work/project/starter/src/agents/code-quality-analyzer.ts","scheme":"file"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/agents/code-quality-analyzer.ts","path":"/voc/work/project/starter/src/agents/code-quality-analyzer.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 08:07:53.801 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:07:53.882 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:08:02.515 [info] tab_closed ✻ [Claude Code] code-quality-analyzer.ts (41443b) ⧉
+2026-11-22 08:08:02.890 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:08:03.388 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:08:03.623 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:08:06.591 [info] diff from /voc/work/project/starter/src/agents/test-coverage-analyzer.ts to /voc/work/project/starter/src/agents/test-coverage-analyzer.ts as ✻ [Claude Code] test-coverage-analyzer.ts (6403df) ⧉
+2026-11-22 08:08:07.544 [info] Closing all diff tabs in the editor...
+2026-11-22 08:08:07.544 [info] Closed 0 diff tabs.
+2026-11-22 08:08:07.854 [info] diff result undefined ✻ [Claude Code] test-coverage-analyzer.ts (6403df) ⧉ {"$mid":1,"external":"file:///voc/work/project/starter/src/agents/test-coverage-analyzer.ts","path":"/voc/work/project/starter/src/agents/test-coverage-analyzer.ts","scheme":"file"} {"$mid":1,"external":"_claude_fs_right:/voc/work/project/starter/src/agents/test-coverage-analyzer.ts","path":"/voc/work/project/starter/src/agents/test-coverage-analyzer.ts","scheme":"_claude_fs_right"} {"preview":false}
+2026-11-22 08:08:08.263 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:08:14.516 [info] tab_closed ✻ [Claude Code] test-coverage-analyzer.ts (6403df) ⧉
+2026-11-22 08:08:14.874 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:08:15.464 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:08:15.704 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:10:51.313 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:10:51.818 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:11:07.122 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:11:07.589 [info] [DiagnosticStreamManager] Notifying 1 clients about diagnostics change for 1 files
+2026-11-22 08:12:05.654 [info] Closing all diff tabs in the editor...
+2026-11-22 08:12:05.654 [info] Closed 0 diff tabs.
+2026-11-22 08:12:34.042 [info] Closing all diff tabs in the editor...
+2026-11-22 08:12:34.042 [info] Closed 0 diff tabs.
+2026-11-22 08:18:50.699 [info] Closing all diff tabs in the editor...
+2026-11-22 08:18:50.701 [info] Closed 0 diff tabs.
+2026-11-22 08:24:26.301 [info] Closing all diff tabs in the editor...
+2026-11-22 08:24:26.323 [info] Closed 0 diff tabs.

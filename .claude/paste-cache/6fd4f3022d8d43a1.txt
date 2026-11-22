@@ -1,0 +1,40 @@
+You defined three distinct agent objects in src/agents/, and their descriptions clearly separate code quality, test coverage, and refactoring responsibilities. However, the current AgentDefinition in src/agents/code-quality-analyzer.ts only includes name, description, and instructions, so none of codeQualityAnalyzer, testCoverageAnalyzer, or refactoringSuggester declares tools or the required Skill tool.
+
+✅ What you did well
+You included all three expected agent files: code-quality-analyzer.ts, test-coverage-analyzer.ts, and refactoring-suggester.ts.
+The agent names code-quality-analyzer, test-coverage-analyzer, and refactoring-suggester are clear and match their responsibilities.
+Your descriptions are meaningfully different: security/performance/maintainability, test completeness, and structural modernization are separated well.
+You centralized exports in src/agents/index.ts, which will make registration in the orchestrator easier.
+⚠️ What can be improved
+Use least-privilege tool sets per agent. For example, the test agent may only need Read, Grep, Glob, and Skill, while an agent that proposes edits may need a broader set.
+Consider aligning your local AgentDefinition shape with the actual Claude Agent SDK agent definition once you add the SDK dependency.
+❌ What is missing or incorrect
+Your AgentDefinition interface currently looks like name, description, and instructions only, and each agent object follows that same limited shape. Because there is no tools property, the agents are effectively definitions without tool access, and they also do not include the required Skill tool. 👉 This is a core rubric requirement.
+
+A concrete fix is to update the interface and each agent definition like this:
+
+export interface AgentDefinition {
+  name: string;
+  description: string;
+  instructions: string;
+  tools: string[];
+  model?: 'inherit' | string;
+}
+
+export const codeQualityAnalyzer: AgentDefinition = {
+  name: 'code-quality-analyzer',
+  description: 'Analyzes code for security, performance, and maintainability concerns.',
+  instructions: codeQualityAnalyzerPrompt,
+  model: 'inherit',
+  tools: ['Read', 'Grep', 'Glob', 'Skill'],
+};
+Then apply the same pattern in src/agents/test-coverage-analyzer.ts and src/agents/refactoring-suggester.ts, using tools: ['Read', 'Grep', 'Glob', 'Skill'] or another appropriately restricted set. This gives the orchestrator spawnable agents that can inspect code and invoke Skills.
+
+📚 How to Improve / Further Learning
+Claude Agent SDK TypeScript repository(opens in a new tab) is the key reference for the expected agent configuration shape and tool registration.
+Anthropic tool use concepts(opens in a new tab) helps reinforce why tools must be explicitly declared for agent behavior.
+Principle of least privilege(opens in a new tab) is relevant to choosing minimal tool sets for each subagent.
+Three distinct agent definitions exist in src/agents/: code-quality-analyzer.ts, test-coverage-analyzer.ts, and refactoring-suggester.ts.
+Each agent is defined using the AgentDefinition type (or equivalent SDK structure) with a clear description field that helps the orchestrator understand when to use it.
+The model property for subagents is set to 'inherit' (or a specific model is justified), and appropriate tools (e.g., file reading, web search) are assigned to the agents that require them.
+The Tools property for the subagents includes Skill tool. This allows the subagents to read from Claude skills library.

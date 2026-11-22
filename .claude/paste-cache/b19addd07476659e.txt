@@ -1,0 +1,367 @@
+Welcome to Part 2! You now have a working multi-agent code review system. This guide will help you transform it into a production-ready application with robust error handling, rate limiting, comprehensive testing, and final deliverables for submission.
+
+Prerequisites: Complete Part 1 (Core Implementation) first.
+
+What you'll build in Part 2:
+
+Production utilities: Error handler with exponential backoff, rate limiter with sliding window
+Complete CLI application with validation and user-friendly error messages
+Comprehensive unit and integration tests
+Final deliverables: 9 PR analysis reports for submission
+Phase 4: Production Utilities
+Production systems require robust error handling and rate limiting to handle failures gracefully and prevent API throttling.
+
+Deliverable: Error Handler
+File to complete: src/utils/error-handler.ts
+
+The error handler provides retry logic with exponential backoff and timeout wrappers.
+
+Task 4.1: Implement Retry Logic
+Complete the withRetry function that implements exponential backoff.
+
+Algorithm:
+
+Try to execute the function
+If it succeeds, return the result
+If it fails and retries remain:
+Calculate backoff delay: delayMs * 2^(attempt - 1)
+Add jitter (random 0-100ms) to prevent thundering herd
+Wait for the calculated duration
+Retry
+If all retries exhausted, throw ReviewError with RETRY_EXHAUSTED code
+Questions to Answer:
+
+How do you implement exponential backoff in JavaScript?
+Why is jitter important?
+How do you wrap setTimeout in a Promise for async/await?
+Task 4.2: Implement Timeout Wrapper
+Complete the withTimeout function using Promise.race.
+
+Algorithm:
+
+Race the provided function against a timeout promise
+The timeout promise should reject after timeoutMs milliseconds
+Whichever completes first wins
+Questions to Answer:
+
+How does Promise.race work?
+How do you create a Promise that rejects after a delay?
+What error code should you use for timeouts?
+Resources:
+
+Promise.race Documentation(opens in a new tab)
+Exponential backoff pattern (search for algorithm examples)
+Deliverable: Rate Limiter
+File to complete: src/utils/rate-limiter.ts
+
+The rate limiter prevents API throttling using a token bucket algorithm with sliding window.
+
+Understanding the Sliding Window
+The sliding window tracks requests made in the last 60 seconds:
+
+At any moment, only count requests from the past 60 seconds
+As time passes, old requests "fall off" the window
+This provides smooth rate limiting vs. fixed time buckets
+Task 4.3: Implement Core Methods
+You need to implement five methods. Study the TODO comments in the file for detailed step-by-step hints.
+
+Methods to implement:
+
+pruneOldRecords() - Start here, it's the simplest
+
+Filter requestHistory to keep only records from the last 60 seconds
+Use Array.filter() and timestamp comparison
+canProceed(estimatedTokens) - Check if request can proceed immediately
+
+Call pruneOldRecords() first
+Check three conditions: concurrent requests, requests per minute, tokens per minute
+Return true only if all conditions are met
+waitForSlot() - Wait for a concurrent request slot
+
+Create a Promise and add its resolve function to waitQueue
+The resolve will be called later by release()
+waitForRateLimit(estimatedTokens) - Wait until rate limits allow the request
+
+Loop while canProceed() returns false
+Calculate wait time based on when the oldest request expires
+Sleep and check again
+acquire(estimatedTokens) - Main entry point
+
+Wait for concurrent slot (use waitForSlot())
+Wait for rate limit (use waitForRateLimit())
+Increment activeRequests
+Add record to requestHistory
+Questions to Answer:
+
+Why use a sliding window instead of fixed time buckets?
+How does the waitQueue pattern work for managing concurrent requests?
+Why track both requests and tokens separately?
+Task 4.4: Integration
+Once complete, uncomment the exports in src/utils/index.ts.
+
+Consider integrating the rate limiter with your orchestrator to prevent API throttling during testing.
+
+Phase 5: Complete CLI Application
+Transform your working prototype into a production-ready CLI tool.
+
+Deliverable: CLI with Validation
+File to complete: src/main.ts
+
+The starter file has detailed TODO comments. Your implementation must:
+
+Validate Command-Line Arguments:
+
+Are all three arguments (owner, repo, prNumber) provided?
+Is prNumber a valid positive integer?
+Exit with helpful error messages if validation fails
+Validate Authentication:
+
+Is either ANTHROPIC_API_KEY OR AWS credentials (AWS_ACCESS_KEY_ID + AWS_SECRET_ACCESS_KEY) configured?
+If using AWS, is AWS_REGION set?
+Log which authentication method is being used
+Exit with clear instructions if neither method is configured
+Validate ANTHROPIC_MODEL:
+
+Is the model environment variable set?
+Provide helpful error messages showing correct format for both Bedrock and Anthropic API
+Run the Review:
+
+Create an Orchestrator instance
+Call reviewPullRequest(owner, repo, prNumber)
+Handle errors gracefully (don't just let stack traces print)
+Generate Reports:
+
+Use ReportGenerator to create all three formats (Markdown, HTML, JSON)
+Save to reports/ directory with appropriate filenames
+Log success messages showing where reports were saved
+Deliverable: Comprehensive Testing
+Implement and pass all tests to validate your implementation.
+
+Task 5.1: Implement Unit Tests
+File to complete: tests/schemas.test.ts
+
+The test file skeleton is provided. You need to implement tests that:
+
+Test Valid Data:
+
+Create valid data objects that match each Zod schema
+Verify schema.parse(validData) doesn't throw
+Test Invalid Data:
+
+Create invalid data (wrong types, missing fields, invalid enum values)
+Verify schema.parse(invalidData) throws ZodError
+Test Edge Cases:
+
+Empty arrays
+Boundary values (score of 0, score of 100)
+Optional fields present vs. absent
+Test JSON Schema Export:
+
+Verify zodToJsonSchema produces valid JSON schema
+Verify required properties are marked correctly
+Run Tests:
+
+npm test
+All tests must pass for successful submission.
+
+Task 5.2: Integration Test
+Test your complete system with a real pull request:
+
+npm run dev -- octocat Hello-World 1
+What to Verify:
+
+
+
+
+
+
+
+Phase 6: Generate Final Deliverables
+REQUIRED FOR SUBMISSION: You must generate analysis reports for three specific pull requests from the test repository and submit all 9 report files with your code.
+
+Test Repository: udacity/cd14715-simple-todo-app
+This public repository (github.com/udacity/cd14715-simple-todo-app(opens in a new tab)) contains three pull requests with realistic code changes that your system will analyze. It is public, so no invitation or special access is needed:
+
+PR #1: "add clean code fixture" (merged)
+PR #2: "Add search functionality for todos" (open)
+PR #3: "Add premium subscription features" (open)
+Task 6.1: Analyze All Three Pull Requests
+Run your system against each PR and verify the reports are comprehensive:
+
+# PR #1: Clean code fixture
+npm run dev -- udacity cd14715-simple-todo-app 1
+
+# PR #2: Search functionality
+npm run dev -- udacity cd14715-simple-todo-app 2
+
+# PR #3: Premium subscription features
+npm run dev -- udacity cd14715-simple-todo-app 3
+Task 6.2: Organize Report Files
+After running all three analyses, you should have 9 report files total (3 PRs × 3 formats each):
+
+reports/
+├── udacity_cd14715-simple-todo-app_1.json
+├── udacity_cd14715-simple-todo-app_1.md
+├── udacity_cd14715-simple-todo-app_1.html
+├── udacity_cd14715-simple-todo-app_2.json
+├── udacity_cd14715-simple-todo-app_2.md
+├── udacity_cd14715-simple-todo-app_2.html
+├── udacity_cd14715-simple-todo-app_3.json
+├── udacity_cd14715-simple-todo-app_3.md
+└── udacity_cd14715-simple-todo-app_3.html
+Task 6.3: Verify Report Quality
+For each set of reports, verify:
+
+Content Quality:
+
+
+
+
+
+
+
+Format Quality:
+
+
+
+
+Completeness:
+
+
+
+Task 6.4: Include Reports in Submission
+CRITICAL: When submitting your project, include the entire reports/ directory with all 9 report files. Reviewers will check:
+
+That all 9 required files are present
+That reports contain meaningful analysis (not empty or undefined)
+That your system successfully analyzed all three PRs
+Tip: If your reports show significant variance from expected results, verify:
+
+You're using the correct model (check ANTHROPIC_MODEL in .env)
+Your prompts are providing clear instructions to subagents
+All three subagents are being invoked (check logs)
+The structured output matches the Zod schemas
+Complete Validation Checklist
+Before submitting, verify all deliverables across both Part 1 and Part 2:
+
+System Configuration
+
+
+
+Subagent Implementation
+
+
+
+
+Orchestrator Logic
+
+
+
+
+
+Production Utilities
+
+
+
+
+
+CLI Application
+
+
+
+
+
+Testing
+
+
+
+
+Final Deliverables (REQUIRED FOR SUBMISSION)
+
+
+
+
+
+
+
+
+Troubleshooting
+Rate limiter not preventing errors
+Symptom: Still getting rate limit errors from API
+
+Common Causes:
+
+Rate limiter not integrated with orchestrator
+acquire() not called before API requests
+release() not called after requests complete
+Limits set too high for your API tier
+Solution: Integrate rate limiter by wrapping your orchestrator's query calls:
+
+await rateLimiter.acquire(estimatedTokens);
+try {
+  const result = await orchestrator.reviewPullRequest(...);
+  return result;
+} finally {
+  rateLimiter.release();
+}
+Reports contain undefined values
+Symptom: JSON reports show undefined or empty arrays for findings
+
+Common Causes:
+
+Subagents not being invoked (Task tool missing from allowedTools)
+Prompts don't clearly specify output structure
+Structured output validation failing silently
+Solution:
+
+Check logs to verify all three subagents are invoked
+Review prompts to ensure they reference the Zod schemas
+Add more specific examples in prompts
+Unit tests failing
+Symptom: npm test reports failures
+
+Common Causes:
+
+Invalid test data doesn't match what Zod expects
+Async tests not using await properly
+Test file syntax errors
+Solution: Run with verbose output: npm test -- --reporter=verbose
+
+CLI validation rejecting valid input
+Symptom: Valid arguments cause validation errors
+
+Common Causes:
+
+Off-by-one errors in process.argv indexing (remember: argv[0] is node, argv[1] is script)
+Integer parsing issues (using Number() instead of parseInt())
+Environment variable checks using wrong logic (AND vs. OR)
+Solution: Add debug logging to see what values are being checked
+
+Hints for Part 2 (Use Sparingly!)
+Hint 6: Exponential Backoff
+Hint 7: Sliding Window Pruning
+Hint 8: Promise.race for Timeout
+Hint 9: Command-Line Argument Parsing
+Hint 10: Authentication Validation
+Success!
+Once all validation checkpoints pass and you have all 9 report files, you've successfully built a production-ready multi-agent code review system!
+
+Your implementation demonstrates:
+
+Multi-agent orchestration using Claude Agent SDK
+External integrations via Model Context Protocol
+Structured outputs with Zod validation
+Production practices like error handling, rate limiting, logging, and testing
+Real-world AI engineering skills applicable to industry
+This is a portfolio-quality project showcasing your expertise in agentic AI systems.
+
+Submission Checklist
+Before submitting, ensure you have:
+
+
+
+
+
+
+
+Congratulations on completing the Multi-Agent Code Review System project!

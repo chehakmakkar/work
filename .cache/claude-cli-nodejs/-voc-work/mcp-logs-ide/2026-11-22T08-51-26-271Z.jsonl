@@ -1,0 +1,66 @@
+{"debug":"Starting connection with timeout of 30000ms","timestamp":"2026-11-22T08:51:36.090Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Successfully connected to ws-ide server in 170ms","timestamp":"2026-11-22T08:51:36.241Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Connection established with capabilities: {\"hasTools\":true,\"hasPrompts\":false,\"hasResources\":false,\"serverVersion\":{\"name\":\"Claude Code code-server MCP\",\"version\":\"1.0.108\"}}","timestamp":"2026-11-22T08:51:36.241Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: closeAllDiffTabs","timestamp":"2026-11-22T08:51:47.968Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'closeAllDiffTabs' completed successfully in 39ms","timestamp":"2026-11-22T08:51:48.007Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T08:53:12.304Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 5ms","timestamp":"2026-11-22T08:53:12.309Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: closeAllDiffTabs","timestamp":"2026-11-22T08:53:12.387Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'closeAllDiffTabs' completed successfully in 36ms","timestamp":"2026-11-22T08:53:12.423Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T08:54:08.359Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 6ms","timestamp":"2026-11-22T08:54:08.365Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T08:56:37.064Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 16ms","timestamp":"2026-11-22T08:56:37.080Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T08:57:09.412Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 11ms","timestamp":"2026-11-22T08:57:09.423Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T08:57:17.565Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 16ms","timestamp":"2026-11-22T08:57:17.581Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T08:57:29.749Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 27ms","timestamp":"2026-11-22T08:57:29.776Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T08:57:31.977Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 7ms","timestamp":"2026-11-22T08:57:31.984Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: closeAllDiffTabs","timestamp":"2026-11-22T08:57:32.037Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'closeAllDiffTabs' completed successfully in 31ms","timestamp":"2026-11-22T08:57:32.068Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T08:57:33.590Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 6ms","timestamp":"2026-11-22T08:57:33.596Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T08:57:35.482Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 5ms","timestamp":"2026-11-22T08:57:35.486Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T08:57:37.218Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 5ms","timestamp":"2026-11-22T08:57:37.223Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T09:11:50.656Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 3ms","timestamp":"2026-11-22T09:11:50.659Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: closeAllDiffTabs","timestamp":"2026-11-22T09:11:50.739Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'closeAllDiffTabs' completed successfully in 27ms","timestamp":"2026-11-22T09:11:50.766Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Calling MCP tool: getDiagnostics","timestamp":"2026-11-22T09:11:53.423Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Tool 'getDiagnostics' completed successfully in 6ms","timestamp":"2026-11-22T09:11:53.429Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"WebSocket transport closed/disconnected, attempting automatic reconnection","timestamp":"2026-11-22T09:13:27.957Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Starting connection with timeout of 30000ms","timestamp":"2026-11-22T09:13:27.969Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Successfully connected to ws-ide server in 78ms","timestamp":"2026-11-22T09:13:28.040Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Connection established with capabilities: {\"hasTools\":true,\"hasPrompts\":false,\"hasResources\":false,\"serverVersion\":{\"name\":\"Claude Code code-server MCP\",\"version\":\"1.0.108\"}}","timestamp":"2026-11-22T09:13:28.040Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"WebSocket reconnection successful after 92ms (attempt 1)","timestamp":"2026-11-22T09:13:28.053Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"WebSocket transport closed/disconnected, attempting automatic reconnection","timestamp":"2026-11-22T09:17:38.055Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Starting connection with timeout of 30000ms","timestamp":"2026-11-22T09:17:38.059Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Connection failed after 3ms: connect ECONNREFUSED 127.0.0.1:23122","timestamp":"2026-11-22T09:17:38.061Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"error":"Connection failed: connect ECONNREFUSED 127.0.0.1:23122","timestamp":"2026-11-22T09:17:38.061Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"WebSocket reconnection attempt 1 completed with status: failed","timestamp":"2026-11-22T09:17:38.061Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Scheduling reconnection attempt 2 in 1000ms","timestamp":"2026-11-22T09:17:38.061Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Starting connection with timeout of 30000ms","timestamp":"2026-11-22T09:17:39.077Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Connection failed after 3ms: connect ECONNREFUSED 127.0.0.1:23122","timestamp":"2026-11-22T09:17:39.078Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"error":"Connection failed: connect ECONNREFUSED 127.0.0.1:23122","timestamp":"2026-11-22T09:17:39.078Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"WebSocket reconnection attempt 2 completed with status: failed","timestamp":"2026-11-22T09:17:39.078Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Scheduling reconnection attempt 3 in 2000ms","timestamp":"2026-11-22T09:17:39.078Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Starting connection with timeout of 30000ms","timestamp":"2026-11-22T09:17:41.082Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Connection failed after 2ms: connect ECONNREFUSED 127.0.0.1:23122","timestamp":"2026-11-22T09:17:41.083Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"error":"Connection failed: connect ECONNREFUSED 127.0.0.1:23122","timestamp":"2026-11-22T09:17:41.083Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"WebSocket reconnection attempt 3 completed with status: failed","timestamp":"2026-11-22T09:17:41.083Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Scheduling reconnection attempt 4 in 4000ms","timestamp":"2026-11-22T09:17:41.083Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Starting connection with timeout of 30000ms","timestamp":"2026-11-22T09:17:45.088Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Connection failed after 3ms: connect ECONNREFUSED 127.0.0.1:23122","timestamp":"2026-11-22T09:17:45.090Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"error":"Connection failed: connect ECONNREFUSED 127.0.0.1:23122","timestamp":"2026-11-22T09:17:45.090Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"WebSocket reconnection attempt 4 completed with status: failed","timestamp":"2026-11-22T09:17:45.091Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Scheduling reconnection attempt 5 in 8000ms","timestamp":"2026-11-22T09:17:45.091Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Starting connection with timeout of 30000ms","timestamp":"2026-11-22T09:17:53.095Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Connection failed after 3ms: connect ECONNREFUSED 127.0.0.1:23122","timestamp":"2026-11-22T09:17:53.097Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"error":"Connection failed: connect ECONNREFUSED 127.0.0.1:23122","timestamp":"2026-11-22T09:17:53.097Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"WebSocket reconnection attempt 5 completed with status: failed","timestamp":"2026-11-22T09:17:53.097Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
+{"debug":"Max reconnection attempts (5) reached, giving up","timestamp":"2026-11-22T09:17:53.097Z","sessionId":"87c65d3a-fc43-4a0b-91e7-3facc9b4bdc2","cwd":"/voc/work"}
